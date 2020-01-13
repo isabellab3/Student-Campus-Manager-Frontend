@@ -5,7 +5,7 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import studentReducer from "./utilities/Student";
 import campusesReducer from "./utilities/Campuses";
 
-// const rootReducer = combineReducers({ campusesReducer });
+const rootReducer = combineReducers({ studentReducer, campusesReducer });
 
 const logger = createLogger({ collapsed: true });
 const middleware = composeWithDevTools(applyMiddleware(logger));
