@@ -1,5 +1,6 @@
 const allStudents = [
   {
+    id: 1,
     firstName: "Harry",
     lastName: "Potter",
     gpa: 2.9,
@@ -8,6 +9,7 @@ const allStudents = [
     campus: "Hogwarts"
   },
   {
+    id: 2,
     firstName: "First",
     lastName: "Last",
     gpa: 3.5,
