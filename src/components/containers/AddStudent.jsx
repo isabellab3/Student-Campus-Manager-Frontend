@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import { connect } from 'react-redux'
-import { addStudent } from '../../store/utilities/Student'
+import { connect } from "react-redux"
+import { addStudent } from "../../store/utilities/Student"
+import AddStudentView from "../views/AddStudentView"
 
 class AddStudent extends Component {
   constructor(props) {
@@ -38,68 +39,14 @@ class AddStudent extends Component {
   }
 
   render() {
+    console.log(this.props.allStudents)
     return (
-      <div>
-        <h1>New Student</h1>
-        <form onSubmit={this.handleSubmit}>
-          <div className='form-row'>
-            <label>Student First Name</label>
-            <input
-              type='text'
-              name='first'
-              placeholder='First name here'
-              onChange={this.handleChange}
-            />
-          </div>
-          <div className='form-row'>
-            <label>Student Last Name</label>
-            <input
-              type='text'
-              name='last'
-              placeholder='Last name here'
-              onChange={this.handleChange}
-            />
-          </div>
-          <div className='form-row'>
-            <label>GPA</label>
-            <input
-              type='number'
-              name='gpa'
-              placeholder='4.0'
-              step='0.01'
-              onChange={this.handleChange}
-            />
-          </div>
-          <div className='form-row'>
-            <label>Student Image URL</label>
-            <input
-              type='url'
-              name='url'
-              placeholder='Student Image URL'
-              onChange={this.handleChange}
-            />
-          </div>
-          <div className='form-row'>
-            <label>Student Email</label>
-            <input
-              type='email'
-              name='email'
-              placeholder='Student Email'
-              onChange={this.handleChange}
-            />
-          </div>
-          <div className='form-row'>
-            <label>Campus</label>
-            <input type='text' name='campus' placeholder='Campus' onChange={this.handleChange} />
-          </div>
-          <input type='submit' value='+ Add Student' />
-        </form>
-      </div>
+      <AddStudentView handleSubmit={this.handleSubmit} handleChange={this.handleChange} />
     )
   }
 }
 
-function mapDispatch(dispatch) {
+const mapDispatch = dispatch => {
   return {
     addStudent: newStudent => dispatch(addStudent(newStudent))
   }
