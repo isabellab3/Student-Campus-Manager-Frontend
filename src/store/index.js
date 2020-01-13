@@ -1,12 +1,14 @@
-import { combineReducers, applyMiddleware, createStore } from "redux"
-import { createLogger } from "redux-logger"
-import { composeWithDevTools } from 'redux-devtools-extension';
+import { combineReducers, applyMiddleware, createStore } from "redux";
+import { createLogger } from "redux-logger";
+import { composeWithDevTools } from "redux-devtools-extension";
 
-import studentReducer from "./utilities/Student"
-const rootReducer = combineReducers({ studentReducer })
+import studentReducer from "./utilities/Student";
+import campusesReducer from "./utilities/Campuses";
 
-const logger = createLogger({ collapsed: true })
+const rootReducer = combineReducers({ studentReducer, campusesReducer });
+
+const logger = createLogger({ collapsed: true });
 const middleware = composeWithDevTools(applyMiddleware(logger));
-const store = createStore(rootReducer, middleware)
+const store = createStore(rootReducer, middleware);
 
-export default store
+export default store;

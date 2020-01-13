@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import { DisplayCampusesView } from "../";
 
@@ -7,9 +8,14 @@ class DisplayCampusesContainer extends Component {
     return (
       <div>
         <h1>DisplayCampusesContainer</h1>
+        <DisplayCampusesView allCampuses={this.props.allCampuses} />
       </div>
     );
   }
 }
 
-export default DisplayCampusesContainer;
+function mapStateToProps(state) {
+  return { allCampuses: state.allCampuses };
+}
+
+export default connect(mapStateToProps)(DisplayCampusesContainer);

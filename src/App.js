@@ -14,7 +14,8 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <navbar>(Navbar goes here)</navbar>
+        <div>(Navbar goes here)</div>
+        {/* It doesn't seem to recognize <navbar> */}
         <Switch>
           {/* <Route exact path="/" component={AddStudent} /> */}
           <Route exact path="/campuses" component={DisplayCampusesContainer} />
