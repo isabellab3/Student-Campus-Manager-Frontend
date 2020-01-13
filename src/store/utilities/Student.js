@@ -2,7 +2,7 @@
 const ADD_STUDENT = 'ADD_STUDENT'
 
 // ACTION CREATORS
-const addStudent = newStudent => {
+export const addStudent = newStudent => {
   return {
     type: ADD_STUDENT,
     payload: newStudent
@@ -13,7 +13,7 @@ const addStudent = newStudent => {
 export default (state={}, action) => {
   switch(action.type) {
     case ADD_STUDENT:
-      return action.payload
+      console.log(action.payload)
     default:
       return state ///
   }

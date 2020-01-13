@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import { connect } from 'react-redux'
+import { addStudent } from '../../store/utilities/Student'
 
 class AddStudent extends Component {
   constructor(props) {
@@ -26,8 +28,7 @@ class AddStudent extends Component {
     }
 
     // needs validation
-    // redux: add new student to database
-    console.log(newStudent)
+    this.props.addStudent(newStudent)
   }
 
   handleChange = event => {
@@ -98,4 +99,10 @@ class AddStudent extends Component {
   }
 }
 
-export default AddStudent
+function mapDispatch(dispatch) {
+  return {
+    addStudent: newStudent => dispatch(addStudent(newStudent))
+  }
+}
+
+export default connect(null, mapDispatch)(AddStudent)
