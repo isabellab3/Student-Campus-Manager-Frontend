@@ -15,7 +15,19 @@ class AddStudent extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
+    const { first, last, gpa, url, email, campus } = this.state
+    const newStudent = {
+      firstName: first,
+      lastName: last,
+      gpa: parseFloat(gpa),
+      image: url,
+      email: email,
+      campus: campus
+    }
+
+    // needs validation
     // redux: add new student to database
+    console.log(newStudent)
   }
 
   handleChange = event => {
@@ -25,7 +37,6 @@ class AddStudent extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <div>
         <h1>New Student</h1>
@@ -50,7 +61,13 @@ class AddStudent extends Component {
           </div>
           <div className='form-row'>
             <label>GPA</label>
-            <input type='number' name='gpa' placeholder='4.0' onChange={this.handleChange} />
+            <input
+              type='number'
+              name='gpa'
+              placeholder='4.0'
+              step='0.01'
+              onChange={this.handleChange}
+            />
           </div>
           <div className='form-row'>
             <label>Student Image URL</label>
