@@ -5,10 +5,10 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import studentReducer from "./utilities/Student";
 import campusesReducer from "./utilities/Campuses";
 
-const rootReducer = combineReducers({ studentReducer, campusesReducer });
+// const rootReducer = combineReducers({ campusesReducer });
 
 const logger = createLogger({ collapsed: true });
 const middleware = composeWithDevTools(applyMiddleware(logger));
-const store = createStore(rootReducer, middleware);
+const store = createStore(campusesReducer, middleware);
 
 export default store;

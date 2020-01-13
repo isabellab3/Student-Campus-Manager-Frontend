@@ -23,11 +23,11 @@ export const removeCampus = id => {
 
 // ???
 const initialState = {
-  allCampuses: "allCampuses"
+  allCampuses: allCampuses
 };
 
 // REDUCER
-export default (state = 3, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case ADD_CAMPUS:
       return Object.assign({}, state, {
