@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // import AddStudent from './components/containers/AddStudent';
+// import SingleCampus from "./components/containers/SingleCampus"
 
 import {
   DisplayCampusesContainer,
@@ -19,6 +20,8 @@ class App extends Component {
         <Switch>
           {/* <Route exact path="/" component={AddStudent} /> */}
           <Route exact path="/campuses" component={DisplayCampusesContainer} />
+          {/* <Route exact path='/student/:id' component={SingleCampus} />
+          <Route exact path='/addstudent' component={AddStudent} /> */}
         </Switch>
         <footer>(Footer goes here)</footer>
       </Router>
