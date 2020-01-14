@@ -64,10 +64,20 @@ class App extends Component {
           </div>
 
           <Switch>
-            <Route exact path="/campuses" component={DisplayCampusesContainer} />
+            <Route exact path="/campuses" component={AllCampusesContainer} />
             {/* <Route exact path="/student/:id" component={SingleCampus} /> */}
             {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
+            <Route exact path="/editstudent:id" component={EditStudentContainer} />
             <Route exact path="/addstudent" component={AddStudent} />
+            {/* URLs for forms editing an individual entry will also need an id */}
+            {/* ALSO feel free to change the path */}
+            <Route exact path="/editcampus" component={EditCampusContainer} />
+            <Route exact path="/allstudents" component={AllStudentsContainer} />
+            <Route exact path="/addcampus" component={AddCampusContainer} />
+            <Route
+              exact
+              path="/singlestudent"
+              component={SingleStudentContainer} />
           </Switch>
 
           <div className="footer">
