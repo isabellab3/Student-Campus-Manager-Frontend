@@ -902,8 +902,6 @@ const allStudents = [
     image: "user18.jpg",
     email: "YekaterinaWagner10@aol.com",
 },
-
-
 ]
 
 export default allStudents

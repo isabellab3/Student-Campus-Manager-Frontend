@@ -31,10 +31,10 @@ class App extends Component {
             <div className='navbar-links'>
               <Link to='/'>Home</Link>
               <Link to='/campuses'>Campuses</Link>
-              <Link to='/addstudent'>Add Student</Link>
+              <Link to='/allstudents'>Students</Link>
+              <Link to='/addcampus'>Add Campus (Test)</Link>
             </div>
           </div>
-
 
           <Route exact path="/" component={Homepage} />
           

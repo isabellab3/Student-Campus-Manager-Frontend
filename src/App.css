@@ -45,6 +45,7 @@ h1 {
 .navbar a {
     text-decoration: none;
     font-size: 22px;
+    color: #44c6ff;
 }
 
 /* Space the navbar links out */

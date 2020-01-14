@@ -4,8 +4,8 @@ const AddStudentView = props => {
   return (
     <div className>
       <h1>New Student</h1>
-      <form className='add-student-form' onSubmit={props.handleSubmit}>
-        <div className='form-row'>
+      <form onSubmit={props.handleSubmit}>
+        <div>
           <label>Student First Name</label>
           <input
             type='text'
@@ -55,9 +55,8 @@ const AddStudentView = props => {
           <label>Campus</label>
           <input type='text' name='campus' placeholder='Campus' onChange={props.handleChange} />
         </div>
-        <div className='form-row'>
-
-        <input type='submit' value='+ Add Student' />
+        <div>
+          <input type='submit' value='+ Add Student' />
         </div>
       </form>
     </div>
