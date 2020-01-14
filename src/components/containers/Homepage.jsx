@@ -11,7 +11,7 @@ class Homepage extends Component {
                     <div class="centered">
                         <p>Manage your students and campuses with this web application!</p>
                         <p>Click '<b>Campuses</b>' at the top to view all current campuses.</p>
-                        <p>Click '<b>Students</b>' at the top to view all current students</p>
+                        <p>Click '<b>Students</b>' at the top to view all current students.</p>
                     </div>
                 </div>
 
