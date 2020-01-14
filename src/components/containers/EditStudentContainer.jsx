@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-
 import { connect } from "react-redux";
-
 import { EditStudentView } from "../";
 
 class EditStudentContainer extends Component {
@@ -15,8 +13,8 @@ class EditStudentContainer extends Component {
   }
 }
 
-function mapStateToProp(state) {
+function mapStateToProps(state) {
   return;
 }
 
-export default connect(mapStateToProp)(EditStudentContainer);
+export default connect(mapStateToProps)(EditStudentContainer);
