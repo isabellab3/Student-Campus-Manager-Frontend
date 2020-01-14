@@ -21,12 +21,12 @@
   font-weight: 700;
 }
 
-.form-row > input {
+.form-row > input, select {
   flex: 2;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.form-row > input {
+.form-row > input, select {
   padding: 0.5em;
 }
 

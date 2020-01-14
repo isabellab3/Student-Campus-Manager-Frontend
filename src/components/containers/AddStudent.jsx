@@ -52,7 +52,7 @@ class AddStudent extends Component {
 
 const mapState = state => {
   return {
-    
+    campusesList: state.campusesReducer.allCampuses
   }
 }
 
