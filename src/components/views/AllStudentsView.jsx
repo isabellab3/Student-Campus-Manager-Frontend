@@ -15,6 +15,7 @@ function AllStudentsView(props) {
           <StudentCard
             student={props.allStudents[i]}
             buttonFunction={props.buttonFunction}
+            buttonText={props.buttonText}
           />
         </div>
       );
@@ -22,7 +23,6 @@ function AllStudentsView(props) {
   
     return (
       <div>
-        <h2>AllStudentsView</h2>
         <div className="student-grid-container">{studentElements}</div>
       </div>
     );

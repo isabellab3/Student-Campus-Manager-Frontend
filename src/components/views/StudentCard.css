@@ -1,10 +1,42 @@
+@font-face {
+  font-family: blacker-sans;
+  src: url('../../fonts/blacker-sans-trial.extrabold.ttf');
+}
+
 .student-card {
   border: solid 2px #44c6ff;
-  width: 150px;
+  width: 180px;
   text-align: center;
   padding: 10px;
   margin: 20px;
   border-radius: 5px;
+  min-height: 180px;
+  font-family: blacker-sans;
+}
+
+.student-card h3 {
+  color: #434343;
+}
+
+.student-card h4 {
+  color: #44c6ff;
+}
+
+.student-card button {
+  border-radius: 50%;
+  background-color: #434343;
+  width: 30px;
+  height: 30px;
+  font-family: blacker-sans;
+  padding-top: 4px;
+  font-size: 15px;
+  color: white;
+}
+
+.student-card button:hover {
+  background-color: #01f5bb;
+  border: none;
+  cursor: pointer;
 }
 
 .student-card img {
