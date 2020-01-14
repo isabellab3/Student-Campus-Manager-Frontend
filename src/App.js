@@ -37,6 +37,7 @@ class App extends Component {
             </div>
           </div>
 
+          {/* We need to render the header and home-content ONLY on the home page... needs a fix. */}
           <div className="header">
             <img src={headerimg} alt="header image" id="header" height="200px" width="100%"/>
             <div class="centered">
