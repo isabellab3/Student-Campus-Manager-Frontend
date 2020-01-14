@@ -9,6 +9,6 @@ const rootReducer = combineReducers({ studentReducer, campusesReducer });
 
 const logger = createLogger({ collapsed: true });
 const middleware = composeWithDevTools(applyMiddleware(logger));
-const store = createStore(campusesReducer, middleware);
+const store = createStore(rootReducer, middleware);
 
 export default store;
