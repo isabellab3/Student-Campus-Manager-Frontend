@@ -16,7 +16,7 @@ const allStudents = [
     gpa: 3.5,
     image: "https://files.slack.com/files-pri/TS58GH27P-FS7AXK1FC/user01.jpg",
     email: "First.Last.22@myhunter.cuny.edu",
-    campus: "Hunter College"
+    campus: "Warwick University"
   }
 ]
 
