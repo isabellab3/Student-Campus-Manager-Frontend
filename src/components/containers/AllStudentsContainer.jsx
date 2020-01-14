@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
 import { AllStudentsView } from "../";
 
 class AllStudentsContainer extends Component {
@@ -7,16 +8,17 @@ class AllStudentsContainer extends Component {
     return (
       <div>
         <h1>AllStudentsContainer</h1>
-        <AllStudentsView />
+        <AllStudentsView 
+          allStudents={this.props.allStudents}
+          buttonFunction="remove"      
+        />
       </div>
     );
   }
 }
 
 function mapStateToProps(state) {
-  return {
-    // key: state.key
-  };
+  return { allStudents: state.studentReducer.allStudents };
 }
 
 export default connect(mapStateToProps)(AllStudentsContainer);
