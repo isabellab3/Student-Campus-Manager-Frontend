@@ -1,0 +1,36 @@
+.add-student {
+  background-color: whitesmoke;
+}
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+.form-row > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+}
+.form-row > input {
+  flex: 2;
+}
+.form-row > input, button {
+  padding: .5em;
+}
+.form-row > button {
+ background: gray;
+ color: white;
+ border: 0;
+}
+
+
+/* label {
+  float: left;
+  clear: left;
+  width: 250px;
+  text-align: right;
+}
+
+input {
+  margin-left: 50px;
+}
+ */
