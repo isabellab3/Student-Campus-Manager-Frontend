@@ -4,7 +4,7 @@ const allStudents = [
     firstName: "Youssef",
     lastName: "Hasan",
     gpa: 3.3,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "YoussefHasan09@hotmail.com",
 },
 
@@ -13,7 +13,7 @@ const allStudents = [
     firstName: "Fatima",
     lastName: "Brennan",
     gpa: 3.1,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "FatimaBrennan65@angelfire.com",
 },
 
@@ -22,7 +22,7 @@ const allStudents = [
     firstName: "Beatriz",
     lastName: "Jones",
     gpa: 3.9,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "BeatrizJones61@angelfire.com",
 },
 
@@ -31,7 +31,7 @@ const allStudents = [
     firstName: "Hinata",
     lastName: "Rodriguez",
     gpa: 3.7,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "HinataRodriguez98@hotmail.com",
 },
 
@@ -40,7 +40,7 @@ const allStudents = [
     firstName: "Arnav",
     lastName: "Rebane",
     gpa: 3.2,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "ArnavRebane46@hotmail.com",
 },
 
@@ -49,7 +49,7 @@ const allStudents = [
     firstName: "Yekaterina",
     lastName: "Babbage",
     gpa: 4.0,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "YekaterinaBabbage37@angelfire.com",
 },
 
@@ -58,7 +58,7 @@ const allStudents = [
     firstName: "Enzo",
     lastName: "Kumara",
     gpa: 3.3,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "EnzoKumara45@orange.com",
 },
 
@@ -67,7 +67,7 @@ const allStudents = [
     firstName: "Jade",
     lastName: "Lovelace",
     gpa: 3.5,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "JadeLovelace79@facebook.com",
 },
 
@@ -76,7 +76,7 @@ const allStudents = [
     firstName: "Sanvi",
     lastName: "Wong",
     gpa: 4.0,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "SanviWong74@outlook.com",
 },
 
@@ -85,7 +85,7 @@ const allStudents = [
     firstName: "Sanvi",
     lastName: "Peeters",
     gpa: 3.2,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "SanviPeeters74@facebook.com",
 },
 
@@ -94,7 +94,7 @@ const allStudents = [
     firstName: "Amelia",
     lastName: "Wong",
     gpa: 3.9,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "AmeliaWong32@gmail.com",
 },
 
@@ -103,7 +103,7 @@ const allStudents = [
     firstName: "Alvaro",
     lastName: "Garcia",
     gpa: 3.4,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "AlvaroGarcia37@msn.com",
 },
 
@@ -112,7 +112,7 @@ const allStudents = [
     firstName: "Aditya",
     lastName: "Rodriguez",
     gpa: 4.0,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "AdityaRodriguez62@outlook.com",
 },
 
@@ -121,7 +121,7 @@ const allStudents = [
     firstName: "Noah",
     lastName: "Bhoumik",
     gpa: 3.8,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "NoahBhoumik12@msn.com",
 },
 
@@ -130,7 +130,7 @@ const allStudents = [
     firstName: "Sosuke",
     lastName: "Wescoff",
     gpa: 3.5,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "SosukeWescoff21@msn.com",
 },
 
@@ -139,7 +139,7 @@ const allStudents = [
     firstName: "Barack",
     lastName: "Beaumont",
     gpa: 3.1,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "BarackBeaumont38@msn.com",
 },
 
@@ -148,7 +148,7 @@ const allStudents = [
     firstName: "Youssef",
     lastName: "Babbage",
     gpa: 3.6,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "YoussefBabbage80@wanadoo.com",
 },
 
@@ -157,7 +157,7 @@ const allStudents = [
     firstName: "Marek",
     lastName: "Novik",
     gpa: 3.7,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "MarekNovik47@geocities.com",
 },
 
@@ -166,7 +166,7 @@ const allStudents = [
     firstName: "Oscar",
     lastName: "Lee",
     gpa: 3.6,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "OscarLee36@facebook.com",
 },
 
@@ -175,7 +175,7 @@ const allStudents = [
     firstName: "Arttu",
     lastName: "Kenobi",
     gpa: 3.7,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "ArttuKenobi98@aol.com",
 },
 
@@ -184,7 +184,7 @@ const allStudents = [
     firstName: "Ridhi",
     lastName: "Wong",
     gpa: 3.1,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "RidhiWong91@angelfire.com",
 },
 
@@ -193,7 +193,7 @@ const allStudents = [
     firstName: "Nathan",
     lastName: "Hasan",
     gpa: 3.2,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "NathanHasan15@gmail.com",
 },
 
@@ -202,7 +202,7 @@ const allStudents = [
     firstName: "Ishan",
     lastName: "Wilson",
     gpa: 3.5,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "IshanWilson71@gmail.com",
 },
 
@@ -211,7 +211,7 @@ const allStudents = [
     firstName: "Diego",
     lastName: "Moore",
     gpa: 3.8,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "DiegoMoore62@msn.com",
 },
 
@@ -220,7 +220,7 @@ const allStudents = [
     firstName: "Arttu",
     lastName: "Bhoumik",
     gpa: 3.7,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "ArttuBhoumik28@facebook.com",
 },
 
@@ -229,7 +229,7 @@ const allStudents = [
     firstName: "Mathias",
     lastName: "Snyder",
     gpa: 3.3,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "MathiasSnyder15@wanadoo.com",
 },
 
@@ -238,7 +238,7 @@ const allStudents = [
     firstName: "Arttu",
     lastName: "Bhoumik",
     gpa: 3.6,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "ArttuBhoumik96@myspace.com",
 },
 
@@ -247,7 +247,7 @@ const allStudents = [
     firstName: "Oliver",
     lastName: "Dahan",
     gpa: 3.4,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "OliverDahan73@gmail.com",
 },
 
@@ -256,7 +256,7 @@ const allStudents = [
     firstName: "Fatima",
     lastName: "Ryan",
     gpa: 3.4,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "FatimaRyan13@facebook.com",
 },
 
@@ -265,7 +265,7 @@ const allStudents = [
     firstName: "Hugo",
     lastName: "Beaumont",
     gpa: 3.6,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "HugoBeaumont36@angelfire.com",
 },
 
@@ -274,7 +274,7 @@ const allStudents = [
     firstName: "Rowena",
     lastName: "Rodriguez",
     gpa: 3.6,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "RowenaRodriguez12@aol.com",
 },
 
@@ -283,7 +283,7 @@ const allStudents = [
     firstName: "Rowena",
     lastName: "Kumara",
     gpa: 3.8,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "RowenaKumara26@yahoo.com",
 },
 
@@ -292,7 +292,7 @@ const allStudents = [
     firstName: "Ethan",
     lastName: "Demir",
     gpa: 3.9,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "EthanDemir05@msn.com",
 },
 
@@ -301,7 +301,7 @@ const allStudents = [
     firstName: "Sosuke",
     lastName: "Bilas",
     gpa: 3.4,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "SosukeBilas95@outlook.com",
 },
 
@@ -310,7 +310,7 @@ const allStudents = [
     firstName: "Tomasz",
     lastName: "Babbage",
     gpa: 3.7,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "TomaszBabbage47@angelfire.com",
 },
 
@@ -319,7 +319,7 @@ const allStudents = [
     firstName: "Ishan",
     lastName: "Wagner",
     gpa: 3.4,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "IshanWagner96@geocities.com",
 },
 
@@ -328,7 +328,7 @@ const allStudents = [
     firstName: "Alvaro",
     lastName: "McNulty",
     gpa: 3.3,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "AlvaroMcNulty32@geocities.com",
 },
 
@@ -337,7 +337,7 @@ const allStudents = [
     firstName: "Beatriz",
     lastName: "McClintock",
     gpa: 3.6,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "BeatrizMcClintock27@aol.com",
 },
 
@@ -346,7 +346,7 @@ const allStudents = [
     firstName: "Beatriz",
     lastName: "McNulty",
     gpa: 3.9,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "BeatrizMcNulty05@aol.com",
 },
 
@@ -355,7 +355,7 @@ const allStudents = [
     firstName: "Santiago",
     lastName: "Moore",
     gpa: 3.4,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "SantiagoMoore75@myspace.com",
 },
 
@@ -364,7 +364,7 @@ const allStudents = [
     firstName: "Anika",
     lastName: "Tsui",
     gpa: 3.5,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "AnikaTsui96@aol.com",
 },
 
@@ -373,7 +373,7 @@ const allStudents = [
     firstName: "Tatiana",
     lastName: "Lee",
     gpa: 3.4,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "TatianaLee76@outlook.com",
 },
 
@@ -382,7 +382,7 @@ const allStudents = [
     firstName: "Ivan",
     lastName: "Cho",
     gpa: 3.5,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "IvanCho27@facebook.com",
 },
 
@@ -391,7 +391,7 @@ const allStudents = [
     firstName: "Ethan",
     lastName: "Singh",
     gpa: 3.2,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "EthanSingh93@outlook.com",
 },
 
@@ -400,7 +400,7 @@ const allStudents = [
     firstName: "Nathan",
     lastName: "Kenobi",
     gpa: 3.8,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "NathanKenobi16@gmail.com",
 },
 
@@ -409,7 +409,7 @@ const allStudents = [
     firstName: "Tatiana",
     lastName: "Tsui",
     gpa: 3.5,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "TatianaTsui09@angelfire.com",
 },
 
@@ -418,7 +418,7 @@ const allStudents = [
     firstName: "Sofia",
     lastName: "Andersen",
     gpa: 3.7,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "SofiaAndersen28@gmail.com",
 },
 
@@ -427,7 +427,7 @@ const allStudents = [
     firstName: "Arnav",
     lastName: "Wilson",
     gpa: 3.5,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "ArnavWilson68@aol.com",
 },
 
@@ -436,7 +436,7 @@ const allStudents = [
     firstName: "Fatima",
     lastName: "Lovelace",
     gpa: 3.8,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "FatimaLovelace44@geocities.com",
 },
 
@@ -445,7 +445,7 @@ const allStudents = [
     firstName: "Sanvi",
     lastName: "Novik",
     gpa: 4.0,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "SanviNovik73@aol.com",
 },
 
@@ -454,7 +454,7 @@ const allStudents = [
     firstName: "Momoka",
     lastName: "Holberton",
     gpa: 3.8,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "MomokaHolberton05@yahoo.com",
 },
 
@@ -463,7 +463,7 @@ const allStudents = [
     firstName: "Haruki",
     lastName: "Lichterman",
     gpa: 3.6,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "HarukiLichterman25@geocities.com",
 },
 
@@ -472,7 +472,7 @@ const allStudents = [
     firstName: "Cornelius",
     lastName: "Arslan",
     gpa: 3.8,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "CorneliusArslan93@yahoo.com",
 },
 
@@ -481,7 +481,7 @@ const allStudents = [
     firstName: "Ridhi",
     lastName: "Wilson",
     gpa: 3.7,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "RidhiWilson07@hotmail.com",
 },
 
@@ -490,7 +490,7 @@ const allStudents = [
     firstName: "Aditya",
     lastName: "Arslan",
     gpa: 3.6,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "AdityaArslan45@orange.com",
 },
 
@@ -499,7 +499,7 @@ const allStudents = [
     firstName: "Florian",
     lastName: "Harris",
     gpa: 3.5,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "FlorianHarris34@facebook.com",
 },
 
@@ -508,7 +508,7 @@ const allStudents = [
     firstName: "Ivan",
     lastName: "Beaumont",
     gpa: 3.7,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "IvanBeaumont66@outlook.com",
 },
 
@@ -517,7 +517,7 @@ const allStudents = [
     firstName: "Clara",
     lastName: "Wong",
     gpa: 3.2,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "ClaraWong46@geocities.com",
 },
 
@@ -526,7 +526,7 @@ const allStudents = [
     firstName: "Jade",
     lastName: "Novik",
     gpa: 4.0,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "JadeNovik75@orange.com",
 },
 
@@ -535,7 +535,7 @@ const allStudents = [
     firstName: "Noah",
     lastName: "Kuznetsov",
     gpa: 3.5,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "NoahKuznetsov79@wanadoo.com",
 },
 
@@ -544,7 +544,7 @@ const allStudents = [
     firstName: "Devansh",
     lastName: "Lovelace",
     gpa: 3.5,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "DevanshLovelace99@orange.com",
 },
 
@@ -553,7 +553,7 @@ const allStudents = [
     firstName: "Zofia",
     lastName: "Snyder",
     gpa: 3.1,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "ZofiaSnyder20@aol.com",
 },
 
@@ -562,7 +562,7 @@ const allStudents = [
     firstName: "Elzbieta",
     lastName: "Rodriguez",
     gpa: 3.5,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "ElzbietaRodriguez70@orange.com",
 },
 
@@ -571,7 +571,7 @@ const allStudents = [
     firstName: "Yekaterina",
     lastName: "Kuznetsov",
     gpa: 3.1,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "YekaterinaKuznetsov82@myspace.com",
 },
 
@@ -580,7 +580,7 @@ const allStudents = [
     firstName: "Ethan",
     lastName: "Wilson",
     gpa: 3.7,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "EthanWilson84@orange.com",
 },
 
@@ -589,7 +589,7 @@ const allStudents = [
     firstName: "Diego",
     lastName: "Kumara",
     gpa: 3.8,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "DiegoKumara72@myspace.com",
 },
 
@@ -598,7 +598,7 @@ const allStudents = [
     firstName: "Sanvi",
     lastName: "Ryan",
     gpa: 3.2,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "SanviRyan12@orange.com",
 },
 
@@ -607,7 +607,7 @@ const allStudents = [
     firstName: "Miriam",
     lastName: "Kamau",
     gpa: 3.1,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "MiriamKamau97@outlook.com",
 },
 
@@ -616,7 +616,7 @@ const allStudents = [
     firstName: "Tomasz",
     lastName: "Bartik",
     gpa: 3.3,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "TomaszBartik13@facebook.com",
 },
 
@@ -625,7 +625,7 @@ const allStudents = [
     firstName: "Sosuke",
     lastName: "Bartik",
     gpa: 3.2,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "SosukeBartik51@facebook.com",
 },
 
@@ -634,7 +634,7 @@ const allStudents = [
     firstName: "Oscar",
     lastName: "Rodriguez",
     gpa: 3.8,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "OscarRodriguez37@wanadoo.com",
 },
 
@@ -643,7 +643,7 @@ const allStudents = [
     firstName: "Ava",
     lastName: "Lovelace",
     gpa: 3.7,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "AvaLovelace88@outlook.com",
 },
 
@@ -652,7 +652,7 @@ const allStudents = [
     firstName: "Amina",
     lastName: "Suzuki",
     gpa: 3.4,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "AminaSuzuki88@msn.com",
 },
 
@@ -661,7 +661,7 @@ const allStudents = [
     firstName: "Arnav",
     lastName: "Wong",
     gpa: 3.8,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "ArnavWong54@outlook.com",
 },
 
@@ -670,7 +670,7 @@ const allStudents = [
     firstName: "Ishan",
     lastName: "Snyder",
     gpa: 3.1,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "IshanSnyder16@yahoo.com",
 },
 
@@ -679,7 +679,7 @@ const allStudents = [
     firstName: "Nathan",
     lastName: "Dahan",
     gpa: 3.5,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "NathanDahan71@aol.com",
 },
 
@@ -688,7 +688,7 @@ const allStudents = [
     firstName: "Zofia",
     lastName: "Singh",
     gpa: 3.2,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "ZofiaSingh82@angelfire.com",
 },
 
@@ -697,7 +697,7 @@ const allStudents = [
     firstName: "Ines",
     lastName: "Babbage",
     gpa: 3.4,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "InesBabbage67@facebook.com",
 },
 
@@ -706,7 +706,7 @@ const allStudents = [
     firstName: "Maximilian",
     lastName: "Singh",
     gpa: 3.2,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "MaximilianSingh06@aol.com",
 },
 
@@ -715,7 +715,7 @@ const allStudents = [
     firstName: "Arttu",
     lastName: "Garcia",
     gpa: 3.4,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "ArttuGarcia86@wanadoo.com",
 },
 
@@ -724,7 +724,7 @@ const allStudents = [
     firstName: "Fatima",
     lastName: "Bhoumik",
     gpa: 3.9,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "FatimaBhoumik24@aol.com",
 },
 
@@ -733,7 +733,7 @@ const allStudents = [
     firstName: "Aditya",
     lastName: "Bhoumik",
     gpa: 3.3,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "AdityaBhoumik50@outlook.com",
 },
 
@@ -742,7 +742,7 @@ const allStudents = [
     firstName: "Mohammad",
     lastName: "Lee",
     gpa: 3.1,
-    image: "user02.jpg",
+    image: "/images/students/student02.jpg",
     email: "MohammadLee10@hotmail.com",
 },
 
@@ -751,7 +751,7 @@ const allStudents = [
     firstName: "Youssef",
     lastName: "Bartik",
     gpa: 3.5,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "YoussefBartik49@gmail.com",
 },
 
@@ -760,7 +760,7 @@ const allStudents = [
     firstName: "Ethan",
     lastName: "Bilas",
     gpa: 3.9,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "EthanBilas42@angelfire.com",
 },
 
@@ -769,7 +769,7 @@ const allStudents = [
     firstName: "Diego",
     lastName: "Lovelace",
     gpa: 3.7,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "DiegoLovelace28@yahoo.com",
 },
 
@@ -778,7 +778,7 @@ const allStudents = [
     firstName: "Lucas",
     lastName: "Rebane",
     gpa: 4.0,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "LucasRebane08@geocities.com",
 },
 
@@ -787,7 +787,7 @@ const allStudents = [
     firstName: "Ridhi",
     lastName: "Bilas",
     gpa: 3.1,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "RidhiBilas77@gmail.com",
 },
 
@@ -796,7 +796,7 @@ const allStudents = [
     firstName: "Clara",
     lastName: "Babbage",
     gpa: 3.8,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "ClaraBabbage25@yahoo.com",
 },
 
@@ -805,7 +805,7 @@ const allStudents = [
     firstName: "Momoka",
     lastName: "Lichterman",
     gpa: 3.1,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "MomokaLichterman58@aol.com",
 },
 
@@ -814,7 +814,7 @@ const allStudents = [
     firstName: "Zofia",
     lastName: "Hasan",
     gpa: 3.8,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "ZofiaHasan08@outlook.com",
 },
 
@@ -823,7 +823,7 @@ const allStudents = [
     firstName: "Noah",
     lastName: "Lovelace",
     gpa: 3.9,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "NoahLovelace72@outlook.com",
 },
 
@@ -832,7 +832,7 @@ const allStudents = [
     firstName: "Yekaterina",
     lastName: "Ryan",
     gpa: 3.2,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "YekaterinaRyan98@wanadoo.com",
 },
 
@@ -841,7 +841,7 @@ const allStudents = [
     firstName: "Devansh",
     lastName: "Suzuki",
     gpa: 3.1,
-    image: "user05.jpg",
+    image: "/images/students/student05.jpg",
     email: "DevanshSuzuki76@aol.com",
 },
 
@@ -850,7 +850,7 @@ const allStudents = [
     firstName: "Hinata",
     lastName: "Walker",
     gpa: 3.3,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "HinataWalker79@msn.com",
 },
 
@@ -859,7 +859,7 @@ const allStudents = [
     firstName: "Lucas",
     lastName: "Novik",
     gpa: 3.1,
-    image: "user03.jpg",
+    image: "/images/students/student03.jpg",
     email: "LucasNovik39@geocities.com",
 },
 
@@ -868,7 +868,7 @@ const allStudents = [
     firstName: "Florian",
     lastName: "Novik",
     gpa: 3.3,
-    image: "user01.jpg",
+    image: "/images/students/student01.jpg",
     email: "FlorianNovik83@facebook.com",
 },
 
@@ -877,7 +877,7 @@ const allStudents = [
     firstName: "Jade",
     lastName: "Arslan",
     gpa: 3.2,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "JadeArslan56@outlook.com",
 },
 
@@ -886,7 +886,7 @@ const allStudents = [
     firstName: "Mia",
     lastName: "Bhoumik",
     gpa: 3.7,
-    image: "user06.jpg",
+    image: "/images/students/student06.jpg",
     email: "MiaBhoumik59@gmail.com",
 },
 
@@ -895,7 +895,7 @@ const allStudents = [
     firstName: "Hinata",
     lastName: "Jones",
     gpa: 3.7,
-    image: "user04.jpg",
+    image: "/images/students/student04.jpg",
     email: "HinataJones42@angelfire.com",
 },
 
