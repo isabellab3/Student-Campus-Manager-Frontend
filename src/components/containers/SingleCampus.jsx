@@ -4,6 +4,19 @@ import SingleCampusView from "../views/SingleCampusView"
 
 import allStudents from "../../dummyData/studentsData"
 
+
+/* 
+
+{id: 2, firstName: "First", lastName: "Last", gpa: 3.5, image: "https://files.slack.com/files-pri/TS58GH27P-FS7AXK1FC/user01.jpg", …}
+id: 2
+firstName: "First"
+lastName: "Last"
+gpa: 3.5
+image: "https://files.slack.com/files-pri/TS58GH27P-FS7AXK1FC/user01.jpg"
+email: "First.Last.22@myhunter.cuny.edu"
+campus: "Hunter College"
+*/
+
 class SingleCampus extends Component {
   constructor(props) {
     super(props)
@@ -11,17 +24,17 @@ class SingleCampus extends Component {
       student: {
         firstName: "",
         lastName: "",
-        image: "",
-        url: "",
         gpa: 0.0,
-        campus: ""
+        image: "",
+        campus: "",
+        email: ""
       }
     }
   }
 
   componentDidMount() {
     const id = this.props.match.params.id
-
+    
     // get the current student id from url params
     const student = allStudents[1]
     this.setState({ student: student })
@@ -31,6 +44,7 @@ class SingleCampus extends Component {
     return <SingleCampusView student={this.state.student} />
   }
 }
+
 
 export default SingleCampus
 
