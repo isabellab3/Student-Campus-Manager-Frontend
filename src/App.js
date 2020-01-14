@@ -24,6 +24,11 @@ class App extends Component {
           {/* <Route exact path="/student/:id" component={SingleCampus} /> */}
           {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
           <Route exact path="/addstudent" component={AddStudent} />
+          <Route
+            exact
+            path="/editstudent/:id"
+            component={EditStudentContainer}
+          />
         </Switch>
         <footer>(Footer goes here)</footer>
       </Router>
