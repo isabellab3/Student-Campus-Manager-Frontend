@@ -6,9 +6,10 @@ import "../views/AllCampusesView.css";
 
 function AllCampusesView(props) {
   let campusElements = [];
+  console.log(props);
   for (let i = 0; i < props.allCampuses.length; i++) {
     campusElements.push(
-      <div class="campus-grid-item">
+      <div className="campus-grid-item">
         <CampusCard
           campus={props.allCampuses[i]}
           buttonFunction={props.buttonFunction}
@@ -20,7 +21,7 @@ function AllCampusesView(props) {
   return (
     <div>
       <h2>AllCampusesView</h2>
-      <div class="campus-grid-container">{campusElements}</div>
+      <div className="campus-grid-container">{campusElements}</div>
     </div>
   );
 }
