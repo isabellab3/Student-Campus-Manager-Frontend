@@ -1,0 +1,66 @@
+/* .student-card {
+  border: solid 2px rgb(105, 189, 192);
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.student-card img {
+  height: 50%;
+  width: 50%;
+}
+ */
+
+.campus-card {
+  border: solid 2px rgb(105, 189, 192);
+  height: 130px;
+  width: 375px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  &__image {
+    margin: 20px 30px 0 0;
+    width: 150px;
+    /* object-fit: contain; */
+    align-self: flex-start;
+    margin: auto;
+  }
+}
+
+.campus-card img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.campus-card-info {
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.campus-card-info h4 {
+  margin: 0;
+}
+
+.campus-card-info {
+}
+
+.campus-card-name {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+}
+
+.campus-card-buttons {
+  display: flex;
+}
+
+.campus-card-buttons a {
+  color: #01f5bb;
+}

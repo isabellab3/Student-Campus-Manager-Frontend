@@ -1,20 +1,34 @@
+import allStudents from '../../dummyData/studentsData'
+
 // ACTION TYPES
 const ADD_STUDENT = 'ADD_STUDENT'
 
 // ACTION CREATORS
-const addStudent = newStudent => {
+export const addStudent = newStudent => {
+  // add student id somewhere
   return {
     type: ADD_STUDENT,
     payload: newStudent
   }
 }
 
+
+// ???
+const initialState = {
+  allStudents: allStudents
+}
+
 // REDUCER
-export default (state={}, action) => {
+export default (state = initialState, action) => {
   switch(action.type) {
     case ADD_STUDENT:
-      return action.payload
+      return Object.assign({}, state, {
+        allStudents: [
+          ...allStudents, 
+          action.payload
+        ]
+      })
     default:
-      return state ///
+      return state
   }
 }
