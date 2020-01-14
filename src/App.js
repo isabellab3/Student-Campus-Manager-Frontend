@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './App.css';
-/* Can probably make a barrel file for the images? */
-import headerimg from './images/home_header.jpg';
-import campusimg from './images/home_campus.png';
-import studentsimg from './images/home_students.png';
-import editimg from './images/home_edit.png';
-
 
 // these will be added to the barrel file index.js in utilities
 // import SingleCampus from "./components";
@@ -24,7 +18,6 @@ import {
 
 class App extends Component {
   render() {
-    console.log(headerimg);
     return (
       <Router>
         <div className="home-body">
@@ -39,7 +32,7 @@ class App extends Component {
 
           {/* We need to render the header and home-content ONLY on the home page... needs a fix. */}
           <div className="header">
-            <img src={headerimg} alt="header image" id="header" height="200px" width="100%"/>
+            <img src="/images/home_header.jpg" alt="header image" id="header" height="200px" width="100%"/>
             <div class="centered">
               <p>Manage your students and campuses with this web application!</p>
               <p>Click '<b>Campuses</b>' at the top to view all current campuses.</p>
@@ -50,15 +43,15 @@ class App extends Component {
           <div className="home-content">
             <div className="row">
               <div className="column">
-                <img src={campusimg} alt="campus icon" width="200px"/> <br></br>
+                <img src="/images/home_campus.png" alt="campus icon" width="200px"/> <br></br>
                 Add and View Campuses
               </div>
               <div className="column">
-                <img src={studentsimg} alt="students icon" width="200px"/> <br></br>
+                <img src="/images/home_students.png" alt="students icon" width="200px"/> <br></br>
                 Add and View Students
               </div>
               <div className="column">
-                <img src={editimg} alt="edit icon" width="200px"/> <br></br>
+                <img src="/images/home_edit.png" alt="edit icon" width="200px"/> <br></br>
                 Edit Existing Students or<br></br> Campuses At Any Time
               </div>
             </div>
