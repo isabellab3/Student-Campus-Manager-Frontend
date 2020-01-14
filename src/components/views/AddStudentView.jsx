@@ -1,8 +1,9 @@
 import React from "react"
-import './AddStudent.css'
+import "./AddStudentView.css"
+
 const AddStudentView = props => {
   return (
-    <div className>
+    <div className='add-student'>
       <h1>New Student</h1>
       <form onSubmit={props.handleSubmit}>
         <div>
@@ -14,7 +15,7 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div>
+        <div className='form-row'>
           <label>Student Last Name</label>
           <input
             type='text'
@@ -23,7 +24,7 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div>
+        <div className='form-row'>
           <label>GPA</label>
           <input
             type='number'
@@ -33,7 +34,7 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div>
+        <div className='form-row'>
           <label>Student Image URL</label>
           <input
             type='url'
@@ -42,7 +43,7 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div>
+        <div className='form-row'>
           <label>Student Email</label>
           <input
             type='email'
@@ -51,13 +52,15 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div>
+        <div className='form-row'>
           <label>Campus</label>
-          <input type='text' name='campus' placeholder='Campus' onChange={props.handleChange} />
+          <select type='text' name='campus' placeholder='Campus' onChange={props.handleChange}>
+{/*             {props.campusesList.map(campus => {
+              return <option value='campus.campusName'>{campus.campusName}</option>
+            })} */}
+          </select>
         </div>
-        <div>
-          <input type='submit' value='+ Add Student' />
-        </div>
+        <input className='submit-button' type='submit' value='+ Add Student' />
       </form>
     </div>
   )
