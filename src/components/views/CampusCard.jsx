@@ -4,6 +4,14 @@ import PropTypes from "prop-types";
 import "../views/CampusCard.css";
 
 const CampusCard = props => {
+  console.log(props.buttonFunction);
+  let button;
+  if (props.buttonFunction == "remove") {
+    button = <div className="remove">Remove</div>;
+  } else {
+    button = <div className="unenroll">Unenroll</div>;
+  }
+
   return (
     <div className="campus-card">
       <img src={props.campus.campusImage} alt="" />
@@ -19,7 +27,7 @@ const CampusCard = props => {
           >
             edit
           </a>
-          <p>{props.campus.campusName}</p>
+          {button}
         </div>
       </div>
     </div>

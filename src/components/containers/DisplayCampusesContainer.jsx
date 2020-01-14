@@ -8,7 +8,10 @@ class DisplayCampusesContainer extends Component {
     return (
       <div>
         <h1>DisplayCampusesContainer</h1>
-        <DisplayCampusesView allCampuses={this.props.allCampuses} />
+        <DisplayCampusesView
+          allCampuses={this.props.allCampuses}
+          buttonFunction="remove"
+        />
       </div>
     );
   }

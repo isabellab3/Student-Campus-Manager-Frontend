@@ -7,7 +7,12 @@ function DisplayCampusesView(props) {
   let campusElements = [];
   console.log(props);
   for (let i = 0; i < props.allCampuses.length; i++) {
-    campusElements.push(<CampusCard campus={props.allCampuses[i]} />);
+    campusElements.push(
+      <CampusCard
+        campus={props.allCampuses[i]}
+        buttonFunction={props.buttonFunction}
+      />
+    );
   }
 
   return (
