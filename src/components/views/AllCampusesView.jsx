@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import { CampusCard } from "../";
+import { CampusCard } from "..";
 
-import "../views/DisplayCampusesView.css";
+import "../views/AllCampusesView.css";
 
-function DisplayCampusesView(props) {
+function AllCampusesView(props) {
   let campusElements = [];
   for (let i = 0; i < props.allCampuses.length; i++) {
     campusElements.push(
@@ -19,10 +19,10 @@ function DisplayCampusesView(props) {
 
   return (
     <div>
-      <h2>DisplayCampusesView</h2>
+      <h2>AllCampusesView</h2>
       <div class="campus-grid-container">{campusElements}</div>
     </div>
   );
 }
 
-export default DisplayCampusesView;
+export default AllCampusesView;

@@ -14,10 +14,12 @@ import editimg from './images/home_edit.png';
 import {
   AddStudent,
   // SingleCampus,
-  DisplayCampusesContainer,
-  DisplayCampusesView,
+  AllCampusesContainer,
   EditStudentContainer,
-  EditStudentView
+  EditCampusContainer,
+  AllStudentsContainer,
+  AddCampusContainer,
+  SingleStudentContainer
 } from "./components";
 
 class App extends Component {

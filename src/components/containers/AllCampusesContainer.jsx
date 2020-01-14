@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import { DisplayCampusesView } from "../";
+import { AllCampusesView } from "..";
 
-class DisplayCampusesContainer extends Component {
+class AllCampusesContainer extends Component {
   render() {
     return (
       <div>
-        <h1>DisplayCampusesContainer</h1>
-        <DisplayCampusesView
+        <h1>AllCampusesContainer</h1>
+        <AllCampusesView
           allCampuses={this.props.allCampuses}
           buttonFunction="remove"
         />
@@ -21,4 +21,4 @@ function mapStateToProps(state) {
   return { allCampuses: state.allCampuses };
 }
 
-export default connect(mapStateToProps)(DisplayCampusesContainer);
+export default connect(mapStateToProps)(AllCampusesContainer);
