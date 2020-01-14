@@ -4,6 +4,11 @@
     src: url('./fonts/blacker-sans-trial.extrabold.ttf');
 }
 
+@font-face {
+    font-family: segoe-ui;
+    src: url('./fonts/SegoeUI.ttf');
+}
+
 /* Content Classes */
 .navbar {
     background-color: white;
@@ -13,10 +18,10 @@
     display: flex;
     justify-content: space-between;
     font-family: blacker-sans;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     margin-top: 10px;
     margin-left: 0px;
-    box-shadow: 0 5px 5px -5px #9b9b9b;
+    box-shadow: 0 5px 5px -5px #222;
 }
 
 /* Overrides user agent stylesheet, cannot be in the navbar class */
@@ -37,22 +42,104 @@ h1 {
 */
 
 /* Change default link decorations */
-.navbar-links a {
+
+
+.navbar a {
     text-decoration: none;
     font-size: 22px;
 }
 
 /* Space the navbar links out */
-.navbar-links a:not(:last-child) {
+.navbar a:not(:last-child) {
     margin-right: 80px;
 }
 
-.navbar-links a:visited {
+.navbar a:visited {
     color: #44c6ff;
 }
 
 .navbar-links a:hover {
     color: #01f5bb
+}
+
+/* Home stuff 
+    Using "vh" instead of % allowed the footer to stick to the bottom.
+*/
+.home-body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+    Flexbox allows the content of the page to fill the screen.
+*/
+.home-content {
+    flex: 1 0 auto;
+    padding: 20px;
+    font-family: segoe-ui;
+    color: #44c6ff;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+
+.column {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.row img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Header Stuff */
+.header {
+    position: relative;
+    text-align: center;
+    color: #44c6ff;
+    font-size: 18px;
+}
+
+.centered {
+    background-color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    opacity: 95%;
+    box-shadow: 0 5px 5px -5px #434343;
+    position: absolute;
+    font-family: segoe-ui;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img#header {
+    opacity: 50%;
+}
+
+/* Footer class */
+.footer {
+    background-color: #434343;
+    font-family: segoe-ui;
+    padding: 15px;
+    color: #44c6ff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    flex-shrink: 0;
 }
 
 
