@@ -1,5 +1,11 @@
 import allCampuses from "../../dummyData/campusesData";
 
+/*
+  The purpose of this file is to: 
+  1. Define the action types for adding and remove campuses from the entire campus database.
+  2. Define the action creators that return the actions to be funneled into the reducer, specifically those for controlling the campuses on the database.
+  3. Defining the reducer function for adding and removing campuses from the database.
+*/
 // ACTION TYPES
 const ADD_CAMPUS = "ADD_CAMPUS";
 // const EDIT_CAMPUS = "EDIT_CAMPUS";
@@ -36,7 +42,6 @@ export default (state = initialState, action) => {
     case REMOVE_CAMPUS:
       // create a copy of the current state
       // place a blank at the index state.id
-
       return Object.assign({}, state, {
         allCampuses: [...allCampuses][state.id]
       });

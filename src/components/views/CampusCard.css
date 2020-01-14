@@ -1,20 +1,5 @@
-/* .student-card {
-  border: solid 2px rgb(105, 189, 192);
-  width: 150px;
-  text-align: center;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 5px;
-}
-
-.student-card img {
-  height: 50%;
-  width: 50%;
-}
- */
-
 .campus-card {
-  border: solid 2px rgb(105, 189, 192);
+  border: solid 2px #44c6ff;
   height: 130px;
   width: 375px;
   padding: 10px;
