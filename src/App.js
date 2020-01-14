@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // these will be added to the barrel file index.js in utilities
-// import AddStudent from "./components";
 // import SingleCampus from "./components";
 
 import {
+  AddStudent,
+  // SingleCampus,
   DisplayCampusesContainer,
   DisplayCampusesView,
   EditStudentContainer,
@@ -21,7 +22,8 @@ class App extends Component {
         <Switch>
           <Route exact path="/campuses" component={DisplayCampusesContainer} />
           {/* <Route exact path="/student/:id" component={SingleCampus} /> */}
-          {/* <Route exact path="/addstudent" component={AddStudent} /> */}
+          {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
+          <Route exact path="/addstudent" component={AddStudent} />
         </Switch>
         <footer>(Footer goes here)</footer>
       </Router>
