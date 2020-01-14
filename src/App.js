@@ -37,7 +37,7 @@ class App extends Component {
             </div>
           </div>
 
-          {/* Header and home-content should only display on the home page... needs to be fixed */}
+          {/* We need to render the header and home-content ONLY on the home page... needs a fix. */}
           <div className="header">
             <img src={headerimg} alt="header image" id="header" height="200px" width="100%"/>
             <div class="centered">
@@ -68,8 +68,18 @@ class App extends Component {
             <Route exact path="/campuses" component={AllCampusesContainer} />
             {/* <Route exact path="/student/:id" component={SingleCampus} /> */}
             {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
+<<<<<<< HEAD
             <Route exact path="/editstudent:id" component={EditStudentContainer} />
             <Route exact path="/addstudent" component={AddStudent} />
+=======
+            <Route
+            exact
+            path="/editstudent/:id"
+            component={EditStudentContainer}
+            />
+            <Route exact path="/addstudent" component={AddStudent} />
+
+>>>>>>> f6eb4fb909a2b7148831a56c6035442d076d4c93
             {/* URLs for forms editing an individual entry will also need an id */}
             {/* ALSO feel free to change the path */}
             <Route exact path="/editcampus" component={EditCampusContainer} />
@@ -78,7 +88,12 @@ class App extends Component {
             <Route
               exact
               path="/singlestudent"
+<<<<<<< HEAD
               component={SingleStudentContainer} />
+=======
+              component={SingleStudentContainer}
+            />
+>>>>>>> f6eb4fb909a2b7148831a56c6035442d076d4c93
           </Switch>
 
           <div className="footer">
