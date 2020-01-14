@@ -21,9 +21,9 @@ StudentCard.propTypes = {
   // firstName: PropTypes.string.isRequired,
   // lastName: PropTypes.string.isRequired,
   // campus: PropTypes.string.isRequired,
+  student: PropTypes.object.isRequired,
   onClick: PropTypes.func.isRequired,
   buttonText: PropTypes.string.isRequired,
-  student: PropTypes.object.isRequired
 }
 
 export default StudentCard
