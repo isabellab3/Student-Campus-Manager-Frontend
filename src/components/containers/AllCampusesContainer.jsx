@@ -5,6 +5,8 @@ import { AllCampusesView } from "..";
 
 class AllCampusesContainer extends Component {
   render() {
+    console.log(this.props.allCampuses);
+
     return (
       <div>
         <h1>AllCampusesContainer</h1>
@@ -18,7 +20,8 @@ class AllCampusesContainer extends Component {
 }
 
 function mapStateToProps(state) {
-  return { allCampuses: state.allCampuses };
+  console.log(state);
+  return { allCampuses: state.campusesReducer.allCampuses };
 }
 
 export default connect(mapStateToProps)(AllCampusesContainer);
