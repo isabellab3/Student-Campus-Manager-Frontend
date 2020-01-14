@@ -2,7 +2,7 @@ import React from "react"
 import './AddStudent.css'
 const AddStudentView = props => {
   return (
-    <div className='add-student'>
+    <div className>
       <h1>New Student</h1>
       <form className='add-student-form' onSubmit={props.handleSubmit}>
         <div className='form-row'>
@@ -14,7 +14,7 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div className='form-row'>
+        <div>
           <label>Student Last Name</label>
           <input
             type='text'
@@ -23,7 +23,7 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div className='form-row'>
+        <div>
           <label>GPA</label>
           <input
             type='number'
@@ -33,7 +33,7 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div className='form-row'>
+        <div>
           <label>Student Image URL</label>
           <input
             type='url'
@@ -42,7 +42,7 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div className='form-row'>
+        <div>
           <label>Student Email</label>
           <input
             type='email'
@@ -51,7 +51,7 @@ const AddStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div className='form-row'>
+        <div>
           <label>Campus</label>
           <input type='text' name='campus' placeholder='Campus' onChange={props.handleChange} />
         </div>

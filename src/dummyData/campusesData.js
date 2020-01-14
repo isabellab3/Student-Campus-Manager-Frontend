@@ -1,3 +1,7 @@
+/*
+  This file contains all the dummy data for campuses in the database.
+  The const allCampuses is an array of what are essentially campus objects that would ultimately be collected from the form input (and the database).
+*/
 const allCampuses = [
 {
     id: 0,
