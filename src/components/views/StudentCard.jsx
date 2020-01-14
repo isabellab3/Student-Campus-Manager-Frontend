@@ -23,7 +23,7 @@ StudentCard.propTypes = {
   // campus: PropTypes.string.isRequired,
   student: PropTypes.object.isRequired,
   onClick: PropTypes.func.isRequired,
-  buttonText: PropTypes.string.isRequired
+  buttonText: PropTypes.string.isRequired,
 }
 
 export default StudentCard

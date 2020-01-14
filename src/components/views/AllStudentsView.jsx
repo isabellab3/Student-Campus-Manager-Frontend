@@ -9,6 +9,7 @@ import { StudentCard } from "..";
 function AllStudentsView(props) {
     let studentElements = [];
     for (let i = 0; i < props.allStudents.length; i++) {
+      
       studentElements.push(
         <div className="student-grid-item">
           <StudentCard
