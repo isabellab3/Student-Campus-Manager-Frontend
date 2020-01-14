@@ -42,8 +42,6 @@ h1 {
 */
 
 /* Change default link decorations */
-
-
 .navbar a {
     text-decoration: none;
     font-size: 22px;
@@ -73,10 +71,14 @@ h1 {
 
 /*
     Flexbox allows the content of the page to fill the screen.
+    .home-content is the universal settings for all elements with className="home-content." .home-content:not(#nonhome) is necessary because due to taking the Homepage component out of App.js (so that it doesn't render on every page), without it, all the styles in home-content, initially meant for only the homepage, would apply to every page. So .home-content:not(#nonhome) makes sure that the homepage's specific styles only applies to the homepage.
 */
 .home-content {
     flex: 1 0 auto;
     padding: 20px;
+}
+
+.home-content:not(#nonhome) {
     font-family: segoe-ui;
     color: #44c6ff;
     font-size: 20px;

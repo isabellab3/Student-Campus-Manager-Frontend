@@ -8,6 +8,7 @@ import './App.css';
 import {
   AddStudent,
   // SingleCampus,
+  Homepage,
   AllCampusesContainer,
   EditStudentContainer,
   EditCampusContainer,
@@ -17,6 +18,7 @@ import {
 } from "./components";
 
 class App extends Component {
+
   render() {
     return (
       <Router>
@@ -30,42 +32,14 @@ class App extends Component {
             </div>
           </div>
 
-          {/* We need to render the header and home-content ONLY on the home page... needs a fix. */}
-          <div className="header">
-            <img src="/images/home_header.jpg" alt="header image" id="header" height="200px" width="100%"/>
-            <div class="centered">
-              <p>Manage your students and campuses with this web application!</p>
-              <p>Click '<b>Campuses</b>' at the top to view all current campuses.</p>
-              <p>Click '<b>Students</b>' at the top to view all current students</p>
-            </div>
-          </div>
-
-          <div className="home-content">
-            <div className="row">
-              <div className="column">
-                <img src="/images/home_campus.png" alt="campus icon" width="200px"/> <br></br>
-                Add and View Campuses
-              </div>
-              <div className="column">
-                <img src="/images/home_students.png" alt="students icon" width="200px"/> <br></br>
-                Add and View Students
-              </div>
-              <div className="column">
-                <img src="/images/home_edit.png" alt="edit icon" width="200px"/> <br></br>
-                Edit Existing Students or<br></br> Campuses At Any Time
-              </div>
-            </div>
-          </div>
-
+          <Route exact path="/" component={Homepage} />
+          
+          <div className="home-content" id="nonhome">
           <Switch>
             <Route exact path="/campuses" component={AllCampusesContainer} />
             {/* <Route exact path="/student/:id" component={SingleCampus} /> */}
             {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
-            <Route
-            exact
-            path="/editstudent/:id"
-            component={EditStudentContainer}
-            />
+            <Route exact path="/editstudent/:id" component={EditStudentContainer} />
             <Route exact path="/addstudent" component={AddStudent} />
 
             {/* URLs for forms editing an individual entry will also need an id */}
@@ -79,6 +53,7 @@ class App extends Component {
               component={SingleStudentContainer}
             />
           </Switch>
+          </div>
 
           <div className="footer">
             <b>Made in the January 2020 CUNY 2X/TTP Bootcamp | Made by Darren Zhang, Eva Yan, Isabella Berekdar, and Samson Wu</b>

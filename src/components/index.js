@@ -1,3 +1,7 @@
+/*
+    This barrel file index.js is used to make importing pages/views/components easier
+    so you don't have to worry about the relative path all the time.
+*/
 export { default as EditStudentContainer } from "./containers/EditStudentContainer.jsx";
 export { default as EditStudentView } from "./views/EditStudentView.jsx";
 
@@ -24,3 +28,6 @@ export { default as SingleStudentView } from "./views/SingleStudentView.jsx";
 
 export { default as CampusCard } from "./views/CampusCard.jsx";
 export { default as StudentCard } from "./views/StudentCard.jsx";
+
+export { default as Homepage } from "./containers/Homepage.jsx";
+
