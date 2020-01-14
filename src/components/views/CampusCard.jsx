@@ -14,7 +14,9 @@ const CampusCard = props => {
 
   return (
     <div className="campus-card">
-      <img src={props.campus.campusImage} alt="" />
+      <a href={"/campus/" + props.campus.id}>
+        <img src={props.campus.campusImage} alt="" />
+      </a>
       <div className="campus-card-info">
         <a className="campus-card-name" href={"/campus/" + props.campus.id}>
           {props.campus.campusName}
