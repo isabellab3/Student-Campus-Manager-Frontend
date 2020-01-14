@@ -2,7 +2,9 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import SingleCampusView from "../views/SingleCampusView"
 import allStudents from "../../dummyData/studentsData"
-import allCampuses from '../../dummyData/campusesData'
+import allCampuses from "../../dummyData/campusesData"
+
+import { getCampus } from "../../store/utilities/Campus"
 
 class SingleCampus extends Component {
   constructor(props) {
@@ -16,14 +18,21 @@ class SingleCampus extends Component {
   componentDidMount() {
     const id = this.props.match.params.id
     // get campus from id in url
+    // (with redux) fetch the campus info of the campus corresponding to the id from the url
+    // const campus = this.props.getCampus(id)
+
     // for now just gets warwick university
     const campus = allCampuses[0]
 
     // get list of students who attend this school from the id
+    // (with redux) function to query database and get any students who attend this campus
+    // const students = this.props.getStudents(campus)
     const filteredStudents = allStudents.filter(student => student.campus === campus.campusName)
-    console.log(campus, allStudents, filteredStudents)
 
-    this.setState({ studentsList: filteredStudents, campus: campus })
+    this.setState({ 
+      studentsList: filteredStudents, 
+      campus: campus 
+    })
   }
 
   render() {
@@ -37,13 +46,10 @@ class SingleCampus extends Component {
   }
 }
 
-export default SingleCampus
-
-/* 
-function mapDispatch(dispatch) {
-  return (
-    <SingleCampusView />
-  )
+const mapDispatch = dispatch => {
+  return {
+    getCampus: id => dispatch(getCampus(id))
+  }
 }
 
-export default connect(null, mapDispatch)(SingleCampus) */
+export default connect(null, mapDispatch)(SingleCampus)
