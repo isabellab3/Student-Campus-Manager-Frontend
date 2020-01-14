@@ -1,3 +1,7 @@
+/*
+  This file contains all the dummy data for students in the database.
+  The const allStudents is an array of what are essentially student objects that would ultimately be collected from the form input (and the database).
+*/
 const allStudents = [
   {
     id: 1,

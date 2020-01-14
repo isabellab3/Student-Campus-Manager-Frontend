@@ -15,6 +15,7 @@ class AllStudentsContainer extends Component {
 
 function mapStateToProps(state) {
   return {
+    allStudents: state.allStudents
     // key: state.key
   };
 }
