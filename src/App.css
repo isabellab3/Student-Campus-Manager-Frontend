@@ -37,20 +37,21 @@ h1 {
 */
 
 /* Change default link decorations */
-a {
+.navbar-links a {
     text-decoration: none;
+    font-size: 22px;
 }
 
 /* Space the navbar links out */
-a:not(:last-child) {
-    margin-right: 50px;
+.navbar-links a:not(:last-child) {
+    margin-right: 80px;
 }
 
-a:visited {
+.navbar-links a:visited {
     color: #44c6ff;
 }
 
-a:hover {
+.navbar-links a:hover {
     color: #01f5bb
 }
 
