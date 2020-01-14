@@ -1,8 +1,8 @@
 export { default as EditStudentContainer } from "./containers/EditStudentContainer.jsx";
 export { default as EditStudentView } from "./views/EditStudentView.jsx";
 
-export { default as DisplayCampusesContainer } from "./containers/DisplayCampusesContainer.jsx";
-export { default as DisplayCampusesView } from "./views/DisplayCampusesView.jsx";
+export { default as AllCampusesContainer } from "./containers/AllCampusesContainer.jsx";
+export { default as AllCampusesView } from "./views/AllCampusesView.jsx";
 
 export { default as AddStudent } from "./containers/AddStudent.jsx";
 export { default as AddStudentView } from "./views/AddStudentView.jsx";
