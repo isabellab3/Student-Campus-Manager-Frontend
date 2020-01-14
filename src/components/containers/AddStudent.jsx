@@ -40,20 +40,10 @@ class AddStudent extends Component {
   }
 
   render() {
+    console.log(this.state)
     return (
-      <AddStudentView
-        handleSubmit={this.handleSubmit}
-        handleChange={this.handleChange}
-        campusesList={this.props.campusesList}
-      />
+      <AddStudentView handleSubmit={this.handleSubmit} handleChange={this.handleChange} />
     )
-  }
-}
-
-
-const mapState = state => {
-  return {
-    
   }
 }
 
@@ -63,4 +53,4 @@ const mapDispatch = dispatch => {
   }
 }
 
-export default connect(mapState, mapDispatch)(AddStudent)
+export default connect(null, mapDispatch)(AddStudent)

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addCampus } from "../../store/utilities/Campuses"; // Get the action creator for campuses
-import { AddCampusView } from "../";
+import AddCampusView from "../views/AddCampusView";
 
 class AddCampusContainer extends Component {
   // Use local state to keep track of form input
