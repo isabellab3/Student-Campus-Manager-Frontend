@@ -11,26 +11,30 @@ import {
   Homepage,
   AllCampusesContainer,
   EditStudentContainer,
+  SingleCampus,
   EditCampusContainer,
   AllStudentsContainer,
   AddCampusContainer,
   SingleStudentContainer
-} from "./components";
+} from "./components"
 
 class App extends Component {
 
   render() {
     return (
       <Router>
-        <div className="home-body">
-          <div className="navbar">
-            <Link to="/"><h1>Student Campus Manager</h1></Link>
-            <div className="navbar-links">
-              <Link to="/">Home</Link>
-              <Link to="/campuses">Campuses</Link> 
-              <Link to="/addstudent">Add Student</Link>
+        <div className='home-body'>
+          <div className='navbar'>
+            <Link to='/'>
+              <h1>Student Campus Manager</h1>
+            </Link>
+            <div className='navbar-links'>
+              <Link to='/'>Home</Link>
+              <Link to='/campuses'>Campuses</Link>
+              <Link to='/addstudent'>Add Student</Link>
             </div>
           </div>
+
 
           <Route exact path="/" component={Homepage} />
           
@@ -44,24 +48,23 @@ class App extends Component {
 
             {/* URLs for forms editing an individual entry will also need an id */}
             {/* ALSO feel free to change the path */}
-            <Route exact path="/editcampus" component={EditCampusContainer} />
-            <Route exact path="/allstudents" component={AllStudentsContainer} />
-            <Route exact path="/addcampus" component={AddCampusContainer} />
-            <Route
-              exact
-              path="/singlestudent"
-              component={SingleStudentContainer}
-            />
+            <Route exact path='/editcampus' component={EditCampusContainer} />
+            <Route exact path='/allstudents' component={AllStudentsContainer} />
+            <Route exact path='/addcampus' component={AddCampusContainer} />
+            <Route exact path='/singlestudent' component={SingleStudentContainer} />
           </Switch>
           </div>
 
-          <div className="footer">
-            <b>Made in the January 2020 CUNY 2X/TTP Bootcamp | Made by Darren Zhang, Eva Yan, Isabella Berekdar, and Samson Wu</b>
+          <div className='footer'>
+            <b>
+              Made in the January 2020 CUNY 2X/TTP Bootcamp | Made by Darren Zhang, Eva Yan,
+              Isabella Berekdar, and Samson Wu
+            </b>
           </div>
         </div>
       </Router>
-    );
+    )
   }
 }
 
-export default App;
+export default App

@@ -24,7 +24,7 @@ export { default as SingleStudentContainer } from "./containers/SingleStudentCon
 export { default as SingleStudentView } from "./views/SingleStudentView.jsx";
 
 // export { default as SingleCampusContainer } from "./containers/SingleCampusContainer.jsx";
-// export { default as SingleCampusView } from "./views/SingleCampusView.jsx";
+export { default as SingleCampus } from "./containers/SingleCampus.jsx";
 
 export { default as CampusCard } from "./views/CampusCard.jsx";
 export { default as StudentCard } from "./views/StudentCard.jsx";

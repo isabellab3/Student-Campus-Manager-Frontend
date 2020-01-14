@@ -39,7 +39,7 @@ class AddStudent extends Component {
   }
 
   render() {
-    console.log(this.props.allStudents)
+    console.log(this.state)
     return (
       <AddStudentView handleSubmit={this.handleSubmit} handleChange={this.handleChange} />
     )

@@ -1,11 +1,11 @@
 import React from "react"
-
+import './AddStudent.css'
 const AddStudentView = props => {
   return (
     <div className>
       <h1>New Student</h1>
-      <form onSubmit={props.handleSubmit}>
-        <div>
+      <form className='add-student-form' onSubmit={props.handleSubmit}>
+        <div className='form-row'>
           <label>Student First Name</label>
           <input
             type='text'
@@ -55,7 +55,10 @@ const AddStudentView = props => {
           <label>Campus</label>
           <input type='text' name='campus' placeholder='Campus' onChange={props.handleChange} />
         </div>
+        <div className='form-row'>
+
         <input type='submit' value='+ Add Student' />
+        </div>
       </form>
     </div>
   )
