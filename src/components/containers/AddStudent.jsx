@@ -32,6 +32,10 @@ class AddStudent extends Component {
       formIsValid = false;
       errors["last"] = "Last name input cannot be empty.";
     }
+    if(gpa < 0 || gpa > 4) {
+      formIsValid = false;
+      errors["gpa"] = "GPA must be between 0.0 and 4.0."
+    }
 
     //Set error messages
     this.setState({errors: errors});
