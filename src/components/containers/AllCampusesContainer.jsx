@@ -9,7 +9,6 @@ class AllCampusesContainer extends Component {
 
     return (
       <div>
-        <h1>AllCampusesContainer</h1>
         <AllCampusesView
           allCampuses={this.props.allCampuses}
           buttonFunction="remove"
