@@ -1,0 +1,64 @@
+@font-face {
+  font-family: blacker-sans;
+  src: url("../../fonts/blacker-sans-trial.extrabold.ttf");
+}
+
+.add-student {
+  font-family: blacker-sans;
+  /* counter-increment: 0.1; */
+}
+
+.add-student > h1 {
+  color: #44c6ff;
+}
+
+.add-student-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em;
+  width: 650px;
+}
+
+.form-row > label {
+  padding: 0.5em 1em 0.5em 0;
+  flex: 1;
+  font-weight: 700;
+  text-align: right;
+  color: #434343;
+}
+
+.form-row > input,
+select {
+  flex: 2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+
+.form-row > input,
+select {
+  padding: 0.5em;
+}
+
+.submit-button {
+  background-color: #44c6ff;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 800;
+  height: 45px;
+  width: 220px;
+  font-size: 18px;
+  margin-top: 25px;
+  font-family: blacker-sans;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #01f5bb;
+}
