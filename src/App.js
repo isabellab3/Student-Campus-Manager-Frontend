@@ -7,11 +7,10 @@ import "./App.css";
 
 import {
   AddStudent,
-  // SingleCampus,
+  SingleCampusContainer,
   Homepage,
   AllCampusesContainer,
   EditStudentContainer,
-  SingleCampus,
   EditCampusContainer,
   AllStudentsContainer,
   AddCampusContainer,
@@ -30,6 +29,8 @@ class App extends Component {
             <div className="navbar-links">
               <Link to="/">Home</Link>
               <Link to="/campuses">Campuses</Link>
+              <Link to="/allstudents">Students</Link>
+              <Link to="/addcampus">Add Campus</Link>
               <Link to="/addstudent">Add Student</Link>
             </div>
           </div>
@@ -39,7 +40,11 @@ class App extends Component {
           <div className="home-content" id="nonhome">
             <Switch>
               <Route exact path="/campuses" component={AllCampusesContainer} />
-              <Route exact path="/campus/:id" component={SingleCampus} />
+              <Route
+                exact
+                path="/campus/:id"
+                component={SingleCampusContainer}
+              />
               {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
               <Route
                 exact
@@ -47,6 +52,7 @@ class App extends Component {
                 component={EditStudentContainer}
               />
               <Route exact path="/addstudent" component={AddStudent} />
+
               {/* URLs for forms editing an individual entry will also need an id */}
               {/* ALSO feel free to change the path */}
               <Route exact path="/editcampus" component={EditCampusContainer} />
