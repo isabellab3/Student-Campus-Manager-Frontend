@@ -66,11 +66,11 @@ const EditStudentView = props => {
             name="campus"
             placeholder="Campus"
             onChange={props.handleChange}
-            value={props.campusName}
+            value={props.campus}
           >
             {props.campusesList.map(campus => {
               return (
-                <option value="campus.campusName">{campus.campusName}</option>
+                <option value={campus.campusName}>{campus.campusName}</option>
               );
             })}
           </select>
