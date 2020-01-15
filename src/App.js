@@ -40,6 +40,8 @@ class App extends Component {
 
           <div className="home-content" id="nonhome">
             <Switch>
+              <Route exact path="/" />{" "}
+              {/* This is to prevent a second Homepage component from showing. We need the Homepage path in the Switch because we've attached a 404 page to the bottom of the Switch element. */}
               <Route exact path="/campuses" component={AllCampusesContainer} />
               <Route
                 exact
@@ -53,7 +55,6 @@ class App extends Component {
                 component={EditStudentContainer}
               />
               <Route exact path="/addstudent" component={AddStudent} />
-
               {/* URLs for forms editing an individual entry will also need an id */}
               {/* ALSO feel free to change the path */}
               <Route exact path="/editcampus" component={EditCampusContainer} />
@@ -68,7 +69,6 @@ class App extends Component {
                 path="/singlestudent"
                 component={SingleStudentContainer}
               />
-
               <Route component={NotFound} />
             </Switch>
           </div>
