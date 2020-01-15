@@ -31,8 +31,8 @@ class App extends Component {
               <Link to='/'>Home</Link>
               <Link to='/campuses'>Campuses</Link>
               <Link to='/allstudents'>Students</Link>
-              <Link to='/addcampus'>Add Campus</Link>
-              <Link to='/addstudent'>Add Student</Link>
+              {/* <Link to='/addcampus'>Add Campus</Link>
+              <Link to='/addstudent'>Add Student</Link> */}
             </div>
           </div>
 
