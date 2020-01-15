@@ -18,6 +18,7 @@ const AddCampusView = props => {
             name='name'
             placeholder='Enter campus name here...'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">
@@ -27,6 +28,7 @@ const AddCampusView = props => {
             name='address1'
             placeholder='Enter address line 1 here...'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">
@@ -36,6 +38,7 @@ const AddCampusView = props => {
             name='address2'
             placeholder='Enter address line 2 here...'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">

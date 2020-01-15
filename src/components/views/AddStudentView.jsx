@@ -13,6 +13,7 @@ const AddStudentView = props => {
             name='first'
             placeholder='Enter first name here...'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className='form-row'>
@@ -22,6 +23,7 @@ const AddStudentView = props => {
             name='last'
             placeholder='Enter last name here...'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className='form-row'>
@@ -32,6 +34,7 @@ const AddStudentView = props => {
             placeholder='4.0'
             step='0.01'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className='form-row'>
@@ -41,6 +44,7 @@ const AddStudentView = props => {
             name='url'
             placeholder='Enter student image URL...'
             onChange={props.handleChange}
+            // Needs default value/image
           />
         </div>
         <div className='form-row'>
@@ -50,6 +54,7 @@ const AddStudentView = props => {
             name='email'
             placeholder='Enter student email...'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className='form-row'>

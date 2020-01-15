@@ -17,20 +17,40 @@ class AddCampusContainer extends Component {
     };
   }
 
-  handleSubmit = event => {
-    event.preventDefault()
-    const { name, address1, address2, url, description, enrollments } = this.state // avoid having to write this.state.name, etc. every time in the below code in this function
-    const newCampus = {
-      campusName: name,
-      address1: address1,
-      address2: address2,
-      campusImage: url,
-      description: description,
-      enrollments: enrollments
+  handleValidation = event => {
+    let formIsValid = true;
+
+    const { name, address1, address2, url, description, enrollments } = this.state;
+    if(!!name || !!address1 || !!address2) {
+      formIsValid = false;
     }
 
-    // needs validation
-    this.props.addCampus(addCampus) // this new object is what's dispatched
+    //Set error messages
+
+    return(formIsValid);
+  }
+
+  handleSubmit = event => {
+    event.preventDefault();
+    const { name, address1, address2, url, description, enrollments } = this.state // avoid having to write this.state.name, etc. every time in the below code in this function
+
+    if(this.handleValidation()) {
+      console.log("handling validation");
+      const newCampus = {
+        campusName: name,
+        address1: address1,
+        address2: address2,
+        campusImage: url,
+        description: description,
+        enrollments: enrollments
+      }
+  
+      // needs validation
+      this.props.addCampus(addCampus) // this new object is what's dispatched
+    }
+    else {
+      alert("Your form has errors!");
+    }
   }
 
   handleChange = event => {

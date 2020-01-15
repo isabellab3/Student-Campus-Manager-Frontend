@@ -17,6 +17,7 @@ class AddStudent extends Component {
     }
   }
 
+  // Need to redirect to that single student's page
   handleSubmit = event => {
     event.preventDefault()
     const { first, last, gpa, url, email, campus } = this.state
