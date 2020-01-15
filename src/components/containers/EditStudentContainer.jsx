@@ -16,7 +16,7 @@ class EditStudentContainer extends Component {
       gpa: this.props.studentInfo.gpa,
       image: this.props.studentInfo.image,
       email: this.props.studentInfo.email,
-      campus: this.props.campusesList[this.props.studentInfo.campus].campusName
+      campus: this.props.studentInfo.campus
     };
     console.log(this.state.first);
   }
