@@ -66,6 +66,11 @@ const AddCampusView = props => {
             {/* {Add Options for all Students here} */}
           </select>
         </div>
+        {/* Error message is mapped on from local state error object list */}
+        {/* Each object needs a unique key set to its key part in the local state */}
+        {Object.entries(props.errors).map(([k, v]) => {
+          return <div className="errors" key={k}><i>{v}</i></div>
+        })}
         <div>
           <input className="submit-button" type='submit' value='+ Add Campus' />
         </div>
