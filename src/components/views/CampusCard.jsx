@@ -21,7 +21,7 @@ const CampusCard = props => {
         <a className="campus-card-name" href={"/campus/" + props.campus.id}>
           {props.campus.campusName}
         </a>
-        <p>(# students goes here)</p>
+        <p>{props.campus.enrollments.length} students</p>
         <div className="campus-card-buttons">
           <a
             className="campus-card-edit"
