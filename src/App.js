@@ -51,7 +51,8 @@ class App extends Component {
               <Route exact path='/editcampus' component={EditCampusContainer} />
               <Route exact path='/allstudents' component={AllStudentsContainer} />
               <Route exact path='/addcampus' component={AddCampusContainer} />
-              <Route exact path='/singlestudent' component={SingleStudentContainer} />
+              {/* below SingleStudent needs fixing */}
+              <Route exact path='/singlestudent' component={SingleStudentContainer} /> 
             </Switch>
           </div>
 

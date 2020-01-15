@@ -8,7 +8,9 @@ const StudentCard = props => {
     <div className='student-card-container'>
       <div className='student-card'>
         <div className="image">
-        <img src={props.student.image} alt="student icon"/>
+        <a href={"/student/" + props.student.id}>
+          <img src={props.student.image} alt="student icon"/>
+        </a>
         </div>
           <h3> {props.student.firstName} {props.student.lastName} </h3>
           <h4> {props.student.campus} </h4>
