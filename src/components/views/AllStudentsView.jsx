@@ -21,7 +21,7 @@ function AllStudentsView(props) {
       <div>
         <div className="top-text">
           <h1 className="title">All Students</h1>
-          <div className="add-student-button">+ Add Student</div>
+          <a href={"/addstudent/"}><div className="add-student-button">+ Add Student</div></a>
         </div>
         <div className="student-grid-container">{studentElements}</div>
       </div>

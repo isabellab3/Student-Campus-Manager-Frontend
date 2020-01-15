@@ -23,6 +23,7 @@ h1.title {
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 10px;
   display: inline-text;
   background-color: #44c6ff;
   border: none;
@@ -47,3 +48,6 @@ h1.title {
   grid-template-columns: 33% 33% 33%;
 }
 
+a {
+  text-decoration: none;
+}

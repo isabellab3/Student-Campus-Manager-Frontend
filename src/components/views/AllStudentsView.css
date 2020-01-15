@@ -25,6 +25,7 @@ h1.title {
   margin-top: 2px;
   margin-bottom: 2px;
   padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
   display: inline-text;
@@ -45,4 +46,8 @@ h1.title {
 .top-text {
   display: flex;
   margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
 }

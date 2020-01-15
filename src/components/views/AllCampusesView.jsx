@@ -20,7 +20,7 @@ function AllCampusesView(props) {
     <div>
       <div className="top-text">
         <h1 className="title">All Campuses</h1>
-        <div className="add-campus-button">+ Add Campus</div>
+        <a href={"/addcampus/"}><div className="add-campus-button">+ Add Campus</div></a>
       </div>
       <div className="campus-grid-container">{campusElements}</div>
     </div>
