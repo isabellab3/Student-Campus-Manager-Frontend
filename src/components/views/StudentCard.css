@@ -8,18 +8,25 @@
   width: 180px;
   text-align: center;
   padding: 10px;
-  margin: 20px;
   border-radius: 5px;
   min-height: 180px;
+  margin-bottom: 20px;
   font-family: blacker-sans;
+  display: inline-block;
+}
+
+.image {
+  text-align: center;
 }
 
 .student-card h3 {
   color: #434343;
+  text-align: center;
 }
 
 .student-card h4 {
   color: #44c6ff;
+  text-align: center;
 }
 
 .student-card button {
@@ -31,6 +38,7 @@
   padding-top: 4px;
   font-size: 15px;
   color: white;
+  border: none;
 }
 
 .student-card button:hover {
@@ -39,7 +47,14 @@
   cursor: pointer;
 }
 
+/* Needs max-width and max-height instead of manually setting the width/height to fit the card properly */
 .student-card img {
-  height: 50%;
-  width: 50%;
+  text-align: center;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+ 
+.student-card-container {
+  text-align: center;
 }
