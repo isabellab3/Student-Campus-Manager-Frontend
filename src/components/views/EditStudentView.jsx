@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./EditStudentView.css";
 
 const EditStudentView = props => {
+  console.log(props);
   return (
     <div className="add-student">
       <h1>Edit Student</h1>
@@ -11,18 +12,20 @@ const EditStudentView = props => {
           <label>Student First Name</label>
           <input
             type="text"
-            name="first"
+            name="firstName"
             placeholder="Enter first name here..."
             onChange={props.handleChange}
+            value={props.studentInfo.firstName}
           />
         </div>
         <div className="form-row">
           <label>Student Last Name</label>
           <input
             type="text"
-            name="last"
+            name="lastName"
             placeholder="Enter last name here..."
             onChange={props.handleChange}
+            value={props.studentInfo.lastName}
           />
         </div>
         <div className="form-row">
@@ -33,15 +36,17 @@ const EditStudentView = props => {
             placeholder="4.0"
             step="0.01"
             onChange={props.handleChange}
+            value={props.studentInfo.gpa}
           />
         </div>
         <div className="form-row">
           <label>Student Image URL</label>
           <input
             type="url"
-            name="url"
+            name="image"
             placeholder="Enter student image URL..."
             onChange={props.handleChange}
+            value={props.studentInfo.image}
           />
         </div>
         <div className="form-row">
@@ -51,6 +56,7 @@ const EditStudentView = props => {
             name="email"
             placeholder="Enter student email..."
             onChange={props.handleChange}
+            value={props.studentInfo.email}
           />
         </div>
         <div className="form-row">
@@ -60,10 +66,13 @@ const EditStudentView = props => {
             name="campus"
             placeholder="Campus"
             onChange={props.handleChange}
+            value={props.campusName}
           >
-            {/*             {props.campusesList.map(campus => {
-                return <option value='campus.campusName'>{campus.campusName}</option>
-              })} */}
+            {props.campusesList.map(campus => {
+              return (
+                <option value="campus.campusName">{campus.campusName}</option>
+              );
+            })}
           </select>
         </div>
         <input

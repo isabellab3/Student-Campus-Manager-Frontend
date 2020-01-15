@@ -11,24 +11,24 @@ class EditStudentContainer extends Component {
     // console.log(this.props.studentInfo);
     // we populate the state with values from the store, but also need to populate the values in the form to match
     this.state = {
-      first: this.props.studentInfo.firstName,
-      last: this.props.studentInfo.lastName,
+      firstName: this.props.studentInfo.firstName,
+      lastName: this.props.studentInfo.lastName,
       gpa: this.props.studentInfo.gpa,
-      url: this.props.studentInfo.image,
+      image: this.props.studentInfo.image,
       email: this.props.studentInfo.email,
-      campus: this.props.campusesList[this.props.studentInfo.campus]
+      campus: this.props.campusesList[this.props.studentInfo.campus].campusName
     };
     console.log(this.state.first);
   }
 
   handleSubmit = event => {
     event.preventDefault();
-    const { first, last, gpa, url, email, campus } = this.state;
+    const { firstName, lastName, gpa, image, email, campus } = this.state;
     const newStudent = {
-      firstName: first,
-      lastName: last,
+      firstName: firstName,
+      lastName: lastName,
       gpa: parseFloat(gpa),
-      image: url,
+      image: image,
       email: email,
       campus: campus
     };
@@ -67,9 +67,11 @@ class EditStudentContainer extends Component {
       <div>
         {/* <h1>EditStudentContainer</h1> */}
         <EditStudentView
-          studentInfo={this.props.studentInfo}
+          studentInfo={this.state}
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
+          campusesList={this.props.campusesList}
+          campusName={this.state.campus}
         />
       </div>
     );
