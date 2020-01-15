@@ -7,6 +7,7 @@ import "./App.css";
 
 import {
   AddStudent,
+  SingleCampus,
   SingleCampusContainer,
   Homepage,
   AllCampusesContainer,
@@ -69,6 +70,7 @@ class App extends Component {
                 path="/singlestudent"
                 component={SingleStudentContainer}
               />
+              <Route exact path="/campus/:id" component={SingleCampus} />
               <Route component={NotFound} />
             </Switch>
           </div>

@@ -25,9 +25,12 @@ class AddStudent extends Component {
       lastName: last,
       gpa: parseFloat(gpa),
       image: url,
-      email: email,
-      campus: campus
+      email: email
+      /*       campus: campus
+       */
     };
+
+    // Add student to campus' list of student
 
     // needs validation
     this.props.addStudent(newStudent);
@@ -40,15 +43,21 @@ class AddStudent extends Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <AddStudentView
         handleSubmit={this.handleSubmit}
         handleChange={this.handleChange}
+        campusesList={this.props.campusesList}
       />
     );
   }
 }
+
+const mapState = state => {
+  return {
+    campusesList: state.campusesReducer.allCampuses
+  };
+};
 
 const mapDispatch = dispatch => {
   return {
@@ -56,4 +65,4 @@ const mapDispatch = dispatch => {
   };
 };
 
-export default connect(null, mapDispatch)(AddStudent);
+export default connect(mapState, mapDispatch)(AddStudent);
