@@ -1,8 +1,9 @@
 import React from "react"
 import './AddStudent.css'
+
 const AddStudentView = props => {
   return (
-    <div className>
+    <div className=>
       <h1>New Student</h1>
       <form className='add-student-form' onSubmit={props.handleSubmit}>
         <div className='form-row'>
