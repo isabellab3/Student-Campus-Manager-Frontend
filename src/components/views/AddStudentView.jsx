@@ -13,6 +13,7 @@ const AddStudentView = props => {
             name="first"
             placeholder="Enter first name here..."
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">
@@ -22,6 +23,7 @@ const AddStudentView = props => {
             name="last"
             placeholder="Enter last name here..."
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">
@@ -32,6 +34,7 @@ const AddStudentView = props => {
             placeholder="4.0"
             step="0.01"
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">
@@ -41,6 +44,7 @@ const AddStudentView = props => {
             name="url"
             placeholder="Enter student image URL..."
             onChange={props.handleChange}
+            // Needs default value/image
           />
         </div>
         <div className="form-row">
@@ -50,16 +54,13 @@ const AddStudentView = props => {
             name="email"
             placeholder="Enter student email..."
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">
           <label>Campus</label>
-          <select
-            type="text"
-            name="campus"
-            placeholder="Campus"
-            onChange={props.handleChange}
-          >
+          <select type='text' name='campus' placeholder='Campus' onChange={props.handleChange}>
+            <option value='none'>None</option>
             {props.campusesList.map(campus => {
               return (
                 <option value="campus.campusName">{campus.campusName}</option>
@@ -67,7 +68,12 @@ const AddStudentView = props => {
             })}
           </select>
         </div>
-        <input className="submit-button" type="submit" value="+ Add Student" />
+
+        {Object.entries(props.errors).map(([k, v]) => {
+          return <div className="errors" key={k}><i>{v}</i></div>
+        })}
+
+        <input className='submit-button' type='submit' value='+ Add Student' />
       </form>
     </div>
   );

@@ -18,6 +18,7 @@ const AddCampusView = props => {
             name='name'
             placeholder='Enter campus name here...'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">
@@ -27,6 +28,7 @@ const AddCampusView = props => {
             name='address1'
             placeholder='Enter address line 1 here...'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">
@@ -36,6 +38,7 @@ const AddCampusView = props => {
             name='address2'
             placeholder='Enter address line 2 here...'
             onChange={props.handleChange}
+            required
           />
         </div>
         <div className="form-row">
@@ -61,8 +64,15 @@ const AddCampusView = props => {
           <label>Enrollments</label>
           <select type='text' name='enrollments' onChange={props.handleChange}>
             {/* {Add Options for all Students here} */}
+            <option value='none'>None</option>
+            {/* Map goes here */}
           </select>
         </div>
+        {/* Error message is mapped on from local state error object list */}
+        {/* Each object needs a unique key set to its key part in the local state */}
+        {Object.entries(props.errors).map(([k, v]) => {
+          return <div className="errors" key={k}><i>{v}</i></div>
+        })}
         <div>
           <input className="submit-button" type='submit' value='+ Add Campus' />
         </div>
