@@ -50,8 +50,9 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case ADD_STUDENT:
+      let newStudent = action.payload
       return Object.assign({}, state, {
-        allStudents: [...allStudents, action.payload]
+        allStudents: {...allStudents, newStudent}
       });
     case DISPLAY_STUDENT:
       return Object.assign({}, state, {

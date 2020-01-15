@@ -36,8 +36,9 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case ADD_CAMPUS:
+      let newCampus =  action.payload
       return Object.assign({}, state, {
-        allCampuses: [...allCampuses, action.payload]
+        allCampuses: [...allCampuses, newCampus]
       });
     case REMOVE_CAMPUS:
       // create a copy of the current state

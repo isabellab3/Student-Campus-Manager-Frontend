@@ -37,18 +37,19 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case ADD_STUDENT:
+      let newStudent = action.payload;
       return Object.assign({}, state, {
-        allStudents: [...allStudents, action.payload]
+        allStudents: {...allStudents, newStudent}
       });
     case REMOVE_STUDENT:
       // create a copy of the current state
       // place a blank at the index state.id
 
       return Object.assign({}, state, {
-        allStudents: [...allStudents][state.id]
+        allStudents: [...allStudents][state.id] //still need to fix this line
       });
     case EDIT_STUDENT:
-      return Object.assign({}, state, {
+      return Object.assign({}, state, { //still need to fix
         allStudents: allStudents
           .slice(0, action.payload.id)
           .concat([action.payload])

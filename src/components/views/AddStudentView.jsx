@@ -2,6 +2,7 @@ import React from "react";
 import "./AddStudentView.css";
 
 const AddStudentView = props => {
+  console.log("props.campusList", props.campusesList)
   return (
     <div className="add-student">
       <h1>New Student</h1>
@@ -61,7 +62,7 @@ const AddStudentView = props => {
           <label>Campus</label>
           <select type='text' name='campus' placeholder='Campus' onChange={props.handleChange}>
             <option value='none'>None</option>
-            {props.campusesList.map(campus => {
+            {Object.keys(props.campusesList).map(campus => {
               return (
                 <option value="campus.campusName">{campus.campusName}</option>
               );

@@ -4,17 +4,16 @@ import { StudentCard } from "..";
 
 function AllStudentsView(props) {
     let studentElements = [];
-    for (let i = 0; i < props.allStudents.length; i++) {
-      
+    for(let key in props.allStudents){
       studentElements.push(
         <div className="student-grid-item">
           <StudentCard
-            student={props.allStudents[i]}
+            student={props.allStudents[key]}
             buttonFunction={props.buttonFunction}
             buttonText={props.buttonText}
           />
         </div>
-      );
+      );    
     }
   
     return (

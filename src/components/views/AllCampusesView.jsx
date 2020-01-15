@@ -4,12 +4,11 @@ import "../views/AllCampusesView.css";
 
 function AllCampusesView(props) {
   let campusElements = [];
-  // console.log(props);
-  for (let i = 0; i < props.allCampuses.length; i++) {
+  for(let key in props.allCampuses){
     campusElements.push(
       <div className="campus-grid-item">
         <CampusCard
-          campus={props.allCampuses[i]}
+          campus={props.allCampuses[key]}
           buttonFunction={props.buttonFunction}
         />
       </div>
