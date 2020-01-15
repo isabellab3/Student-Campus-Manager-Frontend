@@ -7,9 +7,9 @@ const CampusCard = props => {
   console.log(props.buttonFunction);
   let button;
   if (props.buttonFunction == "remove") {
-    button = <div className="remove">Remove</div>;
+    button = <div className="remove">remove</div>;
   } else {
-    button = <div className="unenroll">Unenroll</div>;
+    button = <div className="unenroll">unenroll</div>;
   }
 
   return (
@@ -27,9 +27,10 @@ const CampusCard = props => {
             className="campus-card-edit"
             href={"/editcampus/" + props.campus.id}
           >
-            edit
+            {" "}
+            edit{" "}
           </a>
-          {button}
+          <div className="xbutton">{button}</div>
         </div>
       </div>
     </div>

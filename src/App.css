@@ -99,6 +99,7 @@ h1 {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    padding-top: 50px;
 }
 
 .row img{
@@ -113,6 +114,8 @@ h1 {
     text-align: center;
     color: #44c6ff;
     font-size: 18px;
+    height: 200px;
+    width: 100%;
 }
 
 .centered {
@@ -144,5 +147,3 @@ img#header {
     letter-spacing: 2px;
     flex-shrink: 0;
 }
-
-

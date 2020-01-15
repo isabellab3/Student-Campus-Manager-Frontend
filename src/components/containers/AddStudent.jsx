@@ -47,7 +47,7 @@ class AddStudent extends Component {
       <AddStudentView
         handleSubmit={this.handleSubmit}
         handleChange={this.handleChange}
-        campusesList={this.props.campusesList}
+        campusesList={this.props.campusesList}  // comes from redux store
       />
     );
   }
