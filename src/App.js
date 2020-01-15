@@ -7,11 +7,10 @@ import './App.css';
 
 import {
   AddStudent,
-  // SingleCampus,
+  SingleCampusContainer,
   Homepage,
   AllCampusesContainer,
   EditStudentContainer,
-  SingleCampus,
   EditCampusContainer,
   AllStudentsContainer,
   AddCampusContainer,
@@ -31,28 +30,29 @@ class App extends Component {
             <div className='navbar-links'>
               <Link to='/'>Home</Link>
               <Link to='/campuses'>Campuses</Link>
+              <Link to='/allstudents'>Students</Link>
+              <Link to='/addcampus'>Add Campus</Link>
               <Link to='/addstudent'>Add Student</Link>
             </div>
           </div>
 
-
           <Route exact path="/" component={Homepage} />
           
           <div className="home-content" id="nonhome">
-          <Switch>
-            <Route exact path="/campuses" component={AllCampusesContainer} />
-            {/* <Route exact path="/student/:id" component={SingleCampus} /> */}
-            {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
-            <Route exact path="/editstudent/:id" component={EditStudentContainer} />
-            <Route exact path="/addstudent" component={AddStudent} />
+            <Switch>
+              <Route exact path="/campuses" component={AllCampusesContainer} />
+              <Route exact path="/campus/:id" component={SingleCampusContainer} />
+              {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
+              <Route exact path="/editstudent/:id" component={EditStudentContainer} />
+              <Route exact path="/addstudent" component={AddStudent} />
 
-            {/* URLs for forms editing an individual entry will also need an id */}
-            {/* ALSO feel free to change the path */}
-            <Route exact path='/editcampus' component={EditCampusContainer} />
-            <Route exact path='/allstudents' component={AllStudentsContainer} />
-            <Route exact path='/addcampus' component={AddCampusContainer} />
-            <Route exact path='/singlestudent' component={SingleStudentContainer} />
-          </Switch>
+              {/* URLs for forms editing an individual entry will also need an id */}
+              {/* ALSO feel free to change the path */}
+              <Route exact path='/editcampus' component={EditCampusContainer} />
+              <Route exact path='/allstudents' component={AllStudentsContainer} />
+              <Route exact path='/addcampus' component={AddCampusContainer} />
+              <Route exact path='/singlestudent' component={SingleStudentContainer} />
+            </Switch>
           </div>
 
           <div className='footer'>

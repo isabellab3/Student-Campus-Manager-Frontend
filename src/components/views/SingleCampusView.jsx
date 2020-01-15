@@ -1,15 +1,18 @@
 import React from "react"
 import StudentCard from "./StudentCard"
+import './SingleCampusView.css'
 
 const SingleCampusView = props => {
   console.log(props.campus)
   return (
-    <div className='add-student'>
-      <h1>{props.campus.campusName}</h1>
-      <img src={props.campusImage} alt="" />
+    <div>
+      <img src={props.campus.campusImage} alt="campus image" width="600px"/>
+      <div className="campus-right">
+        <h1>{props.campus.campusName}</h1>
+        <p>{props.campus.description}</p>
+      </div>
       <h5>{props.campus.address1}</h5>
       <h5>{props.campus.address2}</h5>
-      <p>{props.campus.description}</p>
       {props.studentsList.length > 0 ?
         props.studentsList.map(student => {
           return (
@@ -23,7 +26,7 @@ const SingleCampusView = props => {
             />
           )
         })
-      : 
+      :
         <h3>There are no students currently registered to this campus.</h3>
         /* dropdown + button component */
     }
