@@ -7,14 +7,18 @@ class EditStudentContainer extends Component {
   constructor(props) {
     super(props);
     // state is used to hold values for the form
+    // console.log(this.props.match.params.id);
+    // console.log(this.props.studentInfo);
+    // we populate the state with values from the store, but also need to populate the values in the form to match
     this.state = {
-      first: "",
-      last: "",
-      gpa: 0.0,
-      url: "",
-      email: "",
-      campus: ""
+      first: this.props.studentInfo.firstName,
+      last: this.props.studentInfo.lastName,
+      gpa: this.props.studentInfo.gpa,
+      url: this.props.studentInfo.image,
+      email: this.props.studentInfo.email,
+      campus: this.props.campusesList[this.props.studentInfo.campus]
     };
+    console.log(this.state.first);
   }
 
   handleSubmit = event => {
@@ -39,6 +43,17 @@ class EditStudentContainer extends Component {
     });
   };
 
+  // componentDidMount() {
+  //   this.state = {
+  //     first: this.props.studentInfo.firstName,
+  //     last: this.props.studentInfo.lastName,
+  //     gpa: this.props.studentInfo.gpa,
+  //     url: this.props.studentInfo.image,
+  //     email: this.props.studentInfo.email,
+  //     campus: this.props.campusesList[this.props.studentInfo.campus]
+  //   };
+  // }
+
   // render() {
   //   return (
   //     <AddStudentView
@@ -52,7 +67,7 @@ class EditStudentContainer extends Component {
       <div>
         {/* <h1>EditStudentContainer</h1> */}
         <EditStudentView
-          id={1}
+          studentInfo={this.props.studentInfo}
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
         />
@@ -61,12 +76,10 @@ class EditStudentContainer extends Component {
   }
 }
 
-const mapState = state => {
+const mapState = (state, ownProps) => {
   return {
     campusesList: state.campusesReducer.allCampuses,
-    allStudents: state.studentReducer.allStudents
-    // studentInfo:
-    // state.studentReducer.allStudents[props.match.params.redirectParam]
+    studentInfo: state.studentReducer.allStudents[ownProps.match.params.id]
   };
 };
 
