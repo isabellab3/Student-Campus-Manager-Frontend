@@ -19,12 +19,12 @@ export const addStudent = newStudent => {
   }
 }
 
-// export const displayStudent = student =>{
-//   return {
-//     type: DISPLAY_STUDENT,
-//     payload: student
-//   }
-// }
+export const displayStudent = student =>{
+  return {
+    type: DISPLAY_STUDENT,
+    payload: student
+  }
+}
 
 
 // ???
@@ -46,13 +46,13 @@ export default (state = initialState, action) => {
           action.payload
         ]
       })
-    // case DISPLAY_STUDENT:
-    //   return Object.assign({}, state, {
-    //     firstName: action.payload.firstName,
-    //     lastName: action.payload.lastName,
-    //     image: action.payload.image,
-    //     campus: action.payload.image
-    //   })
+    case DISPLAY_STUDENT:
+      return Object.assign({}, state, {
+        firstName: action.payload.firstName,
+        lastName: action.payload.lastName,
+        image: action.payload.image,
+        campus: action.payload.image
+      })
     default:
       return state
   }
