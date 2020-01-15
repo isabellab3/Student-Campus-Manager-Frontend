@@ -35,7 +35,7 @@ class AddStudent extends Component {
     // needs validation
     this.props.addStudent(newStudent)
   }
-  
+
   handleChange = event => {
     this.setState({
       [event.target.name]: event.target.value // makes form input correspond to local state values
@@ -43,26 +43,26 @@ class AddStudent extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
-      <AddStudentView handleSubmit={this.handleSubmit} handleChange={this.handleChange} />
+      <AddStudentView
+        handleSubmit={this.handleSubmit}
+        handleChange={this.handleChange}
+        campusesList={this.props.campusesList}
+      />
     )
   }
 }
 
-<<<<<<< HEAD
 const mapState = state => {
   return {
     campusesList: state.campusesReducer.allCampuses
   }
 }
 
-=======
->>>>>>> master
 const mapDispatch = dispatch => {
   return {
     addStudent: newStudent => dispatch(addStudent(newStudent))
   }
 }
 
-export default connect(null, mapDispatch)(AddStudent)
+export default connect(mapState, mapDispatch)(AddStudent)

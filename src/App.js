@@ -7,6 +7,7 @@ import "./App.css"
 
 import {
   AddStudent,
+  SingleCampus,
   SingleCampusContainer,
   Homepage,
   AllCampusesContainer,
