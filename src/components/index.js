@@ -30,4 +30,4 @@ export { default as CampusCard } from "./views/CampusCard.jsx";
 export { default as StudentCard } from "./views/StudentCard.jsx";
 
 export { default as Homepage } from "./containers/Homepage.jsx";
-
+export { default as NotFound } from "./containers/NotFound.jsx";

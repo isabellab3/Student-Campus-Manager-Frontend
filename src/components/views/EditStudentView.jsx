@@ -4,7 +4,7 @@ import "./EditStudentView.css";
 
 const EditStudentView = props => {
   return (
-    <div className>
+    <div className="add-student">
       <h1>Edit Student</h1>
       <form className="add-student-form" onSubmit={props.handleSubmit}>
         <div className="form-row">
@@ -12,20 +12,20 @@ const EditStudentView = props => {
           <input
             type="text"
             name="first"
-            placeholder="First name here"
+            placeholder="Enter first name here..."
             onChange={props.handleChange}
           />
         </div>
-        <div>
+        <div className="form-row">
           <label>Student Last Name</label>
           <input
             type="text"
             name="last"
-            placeholder="Last name here"
+            placeholder="Enter last name here..."
             onChange={props.handleChange}
           />
         </div>
-        <div>
+        <div className="form-row">
           <label>GPA</label>
           <input
             type="number"
@@ -35,36 +35,38 @@ const EditStudentView = props => {
             onChange={props.handleChange}
           />
         </div>
-        <div>
+        <div className="form-row">
           <label>Student Image URL</label>
           <input
             type="url"
             name="url"
-            placeholder="Student Image URL"
-            onChange={props.handleChange}
-          />
-        </div>
-        <div>
-          <label>Student Email</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Student Email"
-            onChange={props.handleChange}
-          />
-        </div>
-        <div>
-          <label>Campus</label>
-          <input
-            type="text"
-            name="campus"
-            placeholder="Campus"
+            placeholder="Enter student image URL..."
             onChange={props.handleChange}
           />
         </div>
         <div className="form-row">
-          <input type="submit" value="+ Add Student" />
+          <label>Student Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter student email..."
+            onChange={props.handleChange}
+          />
         </div>
+        <div className="form-row">
+          <label>Campus</label>
+          <select
+            type="text"
+            name="campus"
+            placeholder="Campus"
+            onChange={props.handleChange}
+          >
+            {/*             {props.campusesList.map(campus => {
+                return <option value='campus.campusName'>{campus.campusName}</option>
+              })} */}
+          </select>
+        </div>
+        <input className="submit-button" type="submit" value="+ Add Student" />
       </form>
     </div>
   );

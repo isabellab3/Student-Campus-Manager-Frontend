@@ -6,6 +6,7 @@ import { EditStudentView } from "../";
 class EditStudentContainer extends Component {
   constructor(props) {
     super(props);
+    // state is used to hold values for the form
     this.state = {
       first: "",
       last: "",
@@ -49,7 +50,7 @@ class EditStudentContainer extends Component {
   render() {
     return (
       <div>
-        <h1>EditStudentContainer</h1>
+        {/* <h1>EditStudentContainer</h1> */}
         <EditStudentView
           id={1}
           handleSubmit={this.handleSubmit}
@@ -64,6 +65,8 @@ const mapState = state => {
   return {
     campusesList: state.campusesReducer.allCampuses,
     allStudents: state.studentReducer.allStudents
+    // studentInfo:
+    // state.studentReducer.allStudents[props.match.params.redirectParam]
   };
 };
 

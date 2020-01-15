@@ -14,7 +14,8 @@ import {
   EditCampusContainer,
   AllStudentsContainer,
   AddCampusContainer,
-  SingleStudentContainer
+  SingleStudentContainer,
+  NotFound
 } from "./components";
 
 class App extends Component {
@@ -67,6 +68,8 @@ class App extends Component {
                 path="/singlestudent"
                 component={SingleStudentContainer}
               />
+
+              <Route component={NotFound} />
             </Switch>
           </div>
 
