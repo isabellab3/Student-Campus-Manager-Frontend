@@ -6,11 +6,11 @@ const StudentCard = props => {
   console.log(props);
   return (
     <div className='student-card'>
-      <img src={props.student.image} alt="" />
+      <img src={props.image} alt="" />
       <h3>
-        {props.student.firstName} {props.student.lastName}
+        {props.firstName} {props.lastName}
       </h3>
-      <h4>{props.student.campus}</h4>
+      <h4>{props.campus}</h4>
       <button onClick={props.onClick}>{props.buttonText}</button>
     </div>
   )

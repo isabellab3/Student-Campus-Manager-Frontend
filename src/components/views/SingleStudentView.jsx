@@ -6,14 +6,15 @@ import React, { Component } from "react";
 import { StudentCard } from "../";
 
 const SingleStudentView = (props) => {
+  // console.log(props);
   return (
     <div>
       <h2>SingleStudentView</h2>
             <StudentCard
-              image={props.student.image}
-              firstName={props.student.firstName}
-              lastName={props.student.lastName}
-              campus={props.student.campus}
+              image={props.image}
+              firstName={props.firstName}
+              lastName={props.lastName}
+              campus={props.campus}
               onClick={props.onClick}
               buttonText={"Remove Student"}
             />
