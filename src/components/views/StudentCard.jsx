@@ -7,10 +7,8 @@ const StudentCard = props => {
   return (
     <div className='student-card'>
       <img src={props.student.image} alt="" />
-      <h3>
-        {props.student.firstName} {props.student.lastName}
-      </h3>
-      <h4>{props.student.campus}</h4>
+      <h3> {props.student.firstName} {props.student.lastName} </h3>
+      <h4> {props.student.campus} </h4>
       <button onClick={props.onClick}>{props.buttonText}</button>
     </div>
   )

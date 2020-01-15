@@ -8,10 +8,10 @@ class Homepage extends Component {
             <div>
                 <div className="header">
                     <img src="/images/home_header.jpg" alt="header image" id="header" height="200px" width="100%"/>
-                    <div class="centered">
+                    <div className="centered">
                         <p>Manage your students and campuses with this web application!</p>
                         <p>Click '<b>Campuses</b>' at the top to view all current campuses.</p>
-                        <p>Click '<b>Students</b>' at the top to view all current students</p>
+                        <p>Click '<b>Students</b>' at the top to view all current students.</p>
                     </div>
                 </div>
 

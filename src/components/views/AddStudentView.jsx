@@ -11,7 +11,7 @@ const AddStudentView = props => {
           <input
             type='text'
             name='first'
-            placeholder='First name here'
+            placeholder='Enter first name here...'
             onChange={props.handleChange}
           />
         </div>
@@ -20,7 +20,7 @@ const AddStudentView = props => {
           <input
             type='text'
             name='last'
-            placeholder='Last name here'
+            placeholder='Enter last name here...'
             onChange={props.handleChange}
           />
         </div>
@@ -39,7 +39,7 @@ const AddStudentView = props => {
           <input
             type='url'
             name='url'
-            placeholder='Student Image URL'
+            placeholder='Enter student image URL...'
             onChange={props.handleChange}
           />
         </div>
@@ -48,7 +48,7 @@ const AddStudentView = props => {
           <input
             type='email'
             name='email'
-            placeholder='Student Email'
+            placeholder='Enter student email...'
             onChange={props.handleChange}
           />
         </div>
@@ -56,7 +56,7 @@ const AddStudentView = props => {
           <label>Campus</label>
           <select type='text' name='campus' placeholder='Campus' onChange={props.handleChange}>
             {props.campusesList.map(campus => {
-              return <option value='campus.campusName'>{campus.campusName}</option>
+                return <option value='campus.campusName'>{campus.campusName}</option>
             })}
           </select>
         </div>

@@ -6,7 +6,7 @@ import allCampuses from "../../dummyData/campusesData"
 
 import { getCampus } from "../../store/utilities/Campus"
 
-class SingleCampus extends Component {
+class SingleCampusContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -52,4 +52,4 @@ const mapDispatch = dispatch => {
   }
 }
 
-export default connect(null, mapDispatch)(SingleCampus)
+export default connect(null, mapDispatch)(SingleCampusContainer)

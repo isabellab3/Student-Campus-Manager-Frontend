@@ -1,17 +1,16 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import './App.css';
+import React, { Component } from "react"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import "./App.css"
 
 // these will be added to the barrel file index.js in utilities
 // import SingleCampus from "./components";
 
 import {
   AddStudent,
-  // SingleCampus,
+  SingleCampusContainer,
   Homepage,
   AllCampusesContainer,
   EditStudentContainer,
-  SingleCampus,
   EditCampusContainer,
   AllStudentsContainer,
   AddCampusContainer,
@@ -19,7 +18,6 @@ import {
 } from "./components"
 
 class App extends Component {
-
   render() {
     return (
       <Router>
@@ -31,30 +29,30 @@ class App extends Component {
             <div className='navbar-links'>
               <Link to='/'>Home</Link>
               <Link to='/campuses'>Campuses</Link>
+              <Link to='/allstudents'>Students</Link>
+              <Link to='/addcampus'>Add Campus</Link>
               <Link to='/addstudent'>Add Student</Link>
             </div>
           </div>
 
+          <Route exact path='/' component={Homepage} />
 
-          <Route exact path="/" component={Homepage} />
-          
-          <div className="home-content" id="nonhome">
-          <Switch>
-            <Route exact path="/campuses" component={AllCampusesContainer} />
-            {/* <Route exact path="/student/:id" component={SingleCampus} /> */}
-            {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
-            <Route exact path="/editstudent/:id" component={EditStudentContainer} />
-            <Route exact path="/addstudent" component={AddStudent} />
+          <div className='home-content' id='nonhome'>
+            <Switch>
+              <Route exact path='/campuses' component={AllCampusesContainer} />
+              <Route exact path='/campus/:id' component={SingleCampusContainer} />
+              {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
+              <Route exact path='/editstudent/:id' component={EditStudentContainer} />
+              <Route exact path='/addstudent' component={AddStudent} />
 
-            {/* URLs for forms editing an individual entry will also need an id */}
-            {/* ALSO feel free to change the path */}
-            <Route exact path='/editcampus' component={EditCampusContainer} />
-            <Route exact path='/allstudents' component={AllStudentsContainer} />
-            <Route exact path='/addcampus' component={AddCampusContainer} />
-            <Route exact path='/singlestudent' component={SingleStudentContainer} />
-            <Route exact path='/campus/:id' component={SingleCampus} />
-          
-          </Switch>
+              {/* URLs for forms editing an individual entry will also need an id */}
+              {/* ALSO feel free to change the path */}
+              <Route exact path='/editcampus' component={EditCampusContainer} />
+              <Route exact path='/allstudents' component={AllStudentsContainer} />
+              <Route exact path='/addcampus' component={AddCampusContainer} />
+              <Route exact path='/singlestudent' component={SingleStudentContainer} />
+              <Route exact path='/campus/:id' component={SingleCampus} />
+            </Switch>
           </div>
 
           <div className='footer'>

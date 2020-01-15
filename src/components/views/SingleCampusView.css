@@ -1,0 +1,34 @@
+@font-face {
+    font-family: blacker-sans;
+    src: url('../../fonts/blacker-sans-trial.extrabold.ttf');
+  }
+
+@font-face {
+    font-family: segoe-ui;
+    src: url('../../fonts/SegoeUI.ttf');
+}
+
+/* Image of campus */
+img {
+    float: left;
+    margin-right: 20px;
+}
+
+.campus-right {
+    font-family: segoe-ui;
+    font-size: 20px;
+
+}
+
+/* Title of campus name */
+h1#campus-name {
+    font-family: blacker-sans;
+    color: #434343;
+}
+
+/* Address Lines */
+h5 {
+    font-family: segoe-ui;
+    color: #434343;
+    line-height: 40%;
+}

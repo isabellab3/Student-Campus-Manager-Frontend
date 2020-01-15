@@ -1,9 +1,10 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import { addStudent } from "../../store/utilities/Student"
+import { addStudent } from "../../store/utilities/Student" // Get the action creator for students
 import AddStudentView from "../views/AddStudentView"
 
 class AddStudent extends Component {
+  // Use local state to keep track of form input
   constructor(props) {
     super(props)
     this.state = {
@@ -34,34 +35,34 @@ class AddStudent extends Component {
     // needs validation
     this.props.addStudent(newStudent)
   }
-
+  
   handleChange = event => {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value // makes form input correspond to local state values
     })
   }
 
   render() {
+    console.log(this.state)
     return (
-      <AddStudentView
-        handleSubmit={this.handleSubmit}
-        handleChange={this.handleChange}
-        campusesList={this.props.campusesList}
-      />
+      <AddStudentView handleSubmit={this.handleSubmit} handleChange={this.handleChange} />
     )
   }
 }
 
+<<<<<<< HEAD
 const mapState = state => {
   return {
     campusesList: state.campusesReducer.allCampuses
   }
 }
 
+=======
+>>>>>>> master
 const mapDispatch = dispatch => {
   return {
     addStudent: newStudent => dispatch(addStudent(newStudent))
   }
 }
 
-export default connect(mapState, mapDispatch)(AddStudent)
+export default connect(null, mapDispatch)(AddStudent)
