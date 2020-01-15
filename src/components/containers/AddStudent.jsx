@@ -1,11 +1,11 @@
-import React, { Component } from "react"
-import { connect } from "react-redux"
-import { addStudent } from "../../store/utilities/Student"
-import AddStudentView from "../views/AddStudentView"
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { addStudent } from "../../store/utilities/Student";
+import AddStudentView from "../views/AddStudentView";
 
 class AddStudent extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       first: "",
       last: "",
@@ -13,12 +13,12 @@ class AddStudent extends Component {
       url: "",
       email: "",
       campus: ""
-    }
+    };
   }
 
   handleSubmit = event => {
-    event.preventDefault()
-    const { first, last, gpa, url, email, campus } = this.state
+    event.preventDefault();
+    const { first, last, gpa, url, email, campus } = this.state;
     const newStudent = {
       firstName: first,
       lastName: last,
@@ -26,30 +26,33 @@ class AddStudent extends Component {
       image: url,
       email: email,
       campus: campus
-    }
+    };
 
     // needs validation
-    this.props.addStudent(newStudent)
-  }
+    this.props.addStudent(newStudent);
+  };
 
   handleChange = event => {
     this.setState({
       [event.target.name]: event.target.value
-    })
-  }
+    });
+  };
 
   render() {
-    console.log(this.state)
+    console.log(this.state);
     return (
-      <AddStudentView handleSubmit={this.handleSubmit} handleChange={this.handleChange} />
-    )
+      <AddStudentView
+        handleSubmit={this.handleSubmit}
+        handleChange={this.handleChange}
+      />
+    );
   }
 }
 
 const mapDispatch = dispatch => {
   return {
     addStudent: newStudent => dispatch(addStudent(newStudent))
-  }
-}
+  };
+};
 
-export default connect(null, mapDispatch)(AddStudent)
+export default connect(null, mapDispatch)(AddStudent);

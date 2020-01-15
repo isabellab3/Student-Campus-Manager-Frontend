@@ -2,7 +2,7 @@ import allStudents from "../../dummyData/studentsData";
 
 // ACTION TYPES
 const ADD_STUDENT = "ADD_STUDENT";
-// const EDIT_STUDENT = "EDIT_STUDENT";
+const EDIT_STUDENT = "EDIT_STUDENT";
 const REMOVE_STUDENT = "REMOVE_STUDENT";
 
 // ACTION CREATORS
@@ -18,6 +18,13 @@ export const removeStudent = id => {
   return {
     type: REMOVE_STUDENT,
     payload: id
+  };
+};
+export const editStudent = newStudent => {
+  // add campus id somewhere
+  return {
+    type: EDIT_STUDENT,
+    payload: newStudent
   };
 };
 
@@ -39,6 +46,13 @@ export default (state = initialState, action) => {
 
       return Object.assign({}, state, {
         allStudents: [...allStudents][state.id]
+      });
+    case EDIT_STUDENT:
+      return Object.assign({}, state, {
+        allStudents: allStudents
+          .slice(0, action.payload.id)
+          .concat([action.payload])
+          .concat(allStudents.slice(action.payload.id + 1, allStudents.length))
       });
     default:
       return state;
