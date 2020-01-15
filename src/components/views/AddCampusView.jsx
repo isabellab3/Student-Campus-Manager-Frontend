@@ -64,6 +64,8 @@ const AddCampusView = props => {
           <label>Enrollments</label>
           <select type='text' name='enrollments' onChange={props.handleChange}>
             {/* {Add Options for all Students here} */}
+            <option value='none'>None</option>
+            {/* Map goes here */}
           </select>
         </div>
         {/* Error message is mapped on from local state error object list */}

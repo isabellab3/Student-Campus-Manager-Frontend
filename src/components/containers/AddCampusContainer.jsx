@@ -26,23 +26,19 @@ class AddCampusContainer extends Component {
     console.log(name.trim);
     if(name.trim() == "") {
       formIsValid = false;
-      console.log(name, "name error");
       errors["name"] = "Name input cannot be empty.";
     }
     if(address1.trim() == "") {
-      console.log("address false 1");
       formIsValid = false;
       errors["address1"] = "Address line one cannot be empty.";
     }
     if(address2.trim()== "") {
       formIsValid = false;
-      console.log("address 2 error");
       errors["address2"] = "Address line two cannot be empty.";
     }
 
     //Set error messages
     this.setState({errors: errors});
-    console.log(this.state.errors);
     return(formIsValid);
   }
 
@@ -87,6 +83,8 @@ class AddCampusContainer extends Component {
     );
   }
 }
+
+// Need list of non-enrolled students....?
 
 const mapDispatch = dispatch => {
   return {  

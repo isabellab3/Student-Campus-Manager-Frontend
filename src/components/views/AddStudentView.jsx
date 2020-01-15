@@ -60,11 +60,17 @@ const AddStudentView = props => {
         <div className='form-row'>
           <label>Campus</label>
           <select type='text' name='campus' placeholder='Campus' onChange={props.handleChange}>
+            <option value='none'>None</option>
             {props.campusesList.map(campus => {
                 return <option value='campus.campusName'>{campus.campusName}</option>
             })}
           </select>
         </div>
+
+        {Object.entries(props.errors).map(([k, v]) => {
+          return <div className="errors" key={k}><i>{v}</i></div>
+        })}
+
         <input className='submit-button' type='submit' value='+ Add Student' />
       </form>
     </div>
