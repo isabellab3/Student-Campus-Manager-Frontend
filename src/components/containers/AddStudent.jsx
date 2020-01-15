@@ -24,9 +24,12 @@ class AddStudent extends Component {
       lastName: last,
       gpa: parseFloat(gpa),
       image: url,
-      email: email,
-      campus: campus
+      email: email
+      /*       campus: campus
+       */
     }
+
+    // Add student to campus' list of student
 
     // needs validation
     this.props.addStudent(newStudent)
@@ -48,7 +51,6 @@ class AddStudent extends Component {
     )
   }
 }
-
 
 const mapState = state => {
   return {

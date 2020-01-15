@@ -52,6 +52,8 @@ class App extends Component {
             <Route exact path='/allstudents' component={AllStudentsContainer} />
             <Route exact path='/addcampus' component={AddCampusContainer} />
             <Route exact path='/singlestudent' component={SingleStudentContainer} />
+            <Route exact path='/campus/:id' component={SingleCampus} />
+          
           </Switch>
           </div>
 
