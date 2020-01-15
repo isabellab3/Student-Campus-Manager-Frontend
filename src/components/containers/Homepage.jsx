@@ -14,7 +14,6 @@ class Homepage extends Component {
                         <p>Click '<b>Students</b>' at the top to view all current students.</p>
                     </div>
                 </div>
-
                 <div className="home-content">
                     <div className="row">
                         <div className="column">
