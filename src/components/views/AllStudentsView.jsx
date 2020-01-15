@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-// import StudentCard from "./StudentCard";
-
-// If you need cards or styling, you can uncomment the lines here to import
 import "../views/AllStudentsView.css";
-// import { CampusCard } from "../";
 import { StudentCard } from "..";
 
 function AllStudentsView(props) {
@@ -23,6 +19,10 @@ function AllStudentsView(props) {
   
     return (
       <div>
+        <div className="top-text">
+          <h1 className="title">All Students</h1>
+          <a href={"/addstudent/"}><div className="add-student-button">+ Add Student</div></a>
+        </div>
         <div className="student-grid-container">{studentElements}</div>
       </div>
     );

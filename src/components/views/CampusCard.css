@@ -1,3 +1,13 @@
+@font-face {
+  font-family: blacker-sans;
+  src: url('../../fonts/blacker-sans-trial.extrabold.ttf');
+}
+
+@font-face {
+  font-family: segoe-ui;
+  src: url('../../fonts/SegoeUI.ttf');
+}
+
 .campus-card {
   border: solid 2px #44c6ff;
   height: 130px;
@@ -22,8 +32,7 @@
 }
 
 .campus-card-info {
-  margin-left: 10px;
-  margin-right: auto;
+  margin-left: 1px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -33,19 +42,46 @@
 }
 
 .campus-card-info {
+  font-family: segoe-ui;
+  color: #44c6ff;
 }
 
 .campus-card-name {
   text-decoration: none;
   font-weight: bolder;
   font-size: 20px;
-  color: black;
+  color: #434343;
+  font-family: blacker-sans;
 }
 
 .campus-card-buttons {
   display: flex;
+  font-family: blacker-sans;
 }
 
 .campus-card-buttons a {
   color: #01f5bb;
+}
+
+/* Edit button/link next to the remove/delete button */
+.campus-card-edit {
+  margin-right: 30px;
+  margin-top: 6px;
+}
+
+/* The remove or delete button */
+.xbutton {
+  background-color: #9b9b9b;
+  color: white;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.xbutton:hover {
+  background-color: #44c6ff;
+  border: none;
+  cursor: pointer;
 }

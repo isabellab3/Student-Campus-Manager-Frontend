@@ -31,8 +31,8 @@ class App extends Component {
               <Link to='/'>Home</Link>
               <Link to='/campuses'>Campuses</Link>
               <Link to='/allstudents'>Students</Link>
-              <Link to='/addcampus'>Add Campus</Link>
-              <Link to='/addstudent'>Add Student</Link>
+              {/* <Link to='/addcampus'>Add Campus</Link>
+              <Link to='/addstudent'>Add Student</Link> */}
             </div>
           </div>
 
@@ -51,7 +51,8 @@ class App extends Component {
               <Route exact path='/editcampus' component={EditCampusContainer} />
               <Route exact path='/allstudents' component={AllStudentsContainer} />
               <Route exact path='/addcampus' component={AddCampusContainer} />
-              <Route exact path='/singlestudent' component={SingleStudentContainer} />
+              {/* below SingleStudent needs fixing */}
+              <Route exact path='/singlestudent' component={SingleStudentContainer} /> 
             </Switch>
           </div>
 

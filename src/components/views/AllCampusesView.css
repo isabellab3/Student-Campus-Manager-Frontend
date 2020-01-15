@@ -1,4 +1,53 @@
+@font-face {
+  font-family: blacker-sans;
+  src: url('../../fonts/blacker-sans-trial.extrabold.ttf');
+}
+
+@font-face {
+  font-family: segoe-ui;
+  src: url('../../fonts/SegoeUI.ttf');
+}
+
+/* All Campuses title text big */
+h1.title {
+  font-family: blacker-sans;
+  color: #44c6ff;
+  display: inline-text;
+  margin-right: 30px;
+}
+
+/* Add campus button */
+.add-campus-button {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  display: inline-text;
+  background-color: #44c6ff;
+  border: none;
+  border-radius: 10px;
+  font-family: blacker-sans;
+  color: white;
+  font-size: 20px;
+}
+
+.add-campus-button:hover {
+  background-color: #01f5bb;
+  border: none;
+  cursor: pointer;
+}
+
+.top-text {
+  display: flex;
+}
+
 .campus-grid-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
+}
+
+a {
+  text-decoration: none;
 }

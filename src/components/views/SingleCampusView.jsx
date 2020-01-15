@@ -8,7 +8,7 @@ const SingleCampusView = props => {
     <div>
       <img src={props.campus.campusImage} alt="campus image" width="600px"/>
       <div className="campus-right">
-        <h1>{props.campus.campusName}</h1>
+        <h1 id="campus-name">{props.campus.campusName}</h1>
         <p>{props.campus.description}</p>
       </div>
       <h5>{props.campus.address1}</h5>
