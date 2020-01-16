@@ -7,10 +7,12 @@ class AllStudentsContainer extends Component {
   render() {
     return (
       <div>
+        
         <AllStudentsView 
           allStudents={this.props.allStudents}
+          allCampuses={this.props.allCampuses}
           buttonFunction="remove"
-          buttonText="X"      
+          buttonText="remove"      
         />
       </div>
     );
@@ -18,7 +20,10 @@ class AllStudentsContainer extends Component {
 }
 
 function mapStateToProps(state) {
-  return { allStudents: state.studentReducer.allStudents };
+  return { 
+    allStudents: state.studentReducer.allStudents,
+    allCampuses: state.campusReducer.allCampuses
+  };
 }
 
 export default connect(mapStateToProps)(AllStudentsContainer);

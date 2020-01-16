@@ -85,7 +85,7 @@ p.address {
   height: 50px;
 }
 
-select {
+select#single-campus-view {
   /* width: 230px;
     height: 50px; */
   font-family: segoe-ui;
@@ -107,7 +107,7 @@ select {
   -moz-appearance: none;
 }
 
-select.classic {
+select#single-campus-view.classic {
   text-align: center;
   background-image:
     /* left half of arrow */ linear-gradient(
