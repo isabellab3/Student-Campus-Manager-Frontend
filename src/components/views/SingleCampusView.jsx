@@ -40,7 +40,7 @@ const SingleCampusView = props => {
               </div>
               <div className="select-container">
                 <div className="select-wrapper">
-                  <select className="classic">
+                  <select className="classic" id="single-campus-view">
                     
                     <option>None</option>
                     <option>Student Temp 1</option>

@@ -10,9 +10,9 @@ class AllStudentsContainer extends Component {
         
         <AllStudentsView 
           allStudents={this.props.allStudents}
-          buttonFunction="remove"
-          buttonText="X"      
           allCampuses={this.props.allCampuses}
+          buttonFunction="remove"
+          buttonText="remove"      
         />
       </div>
     );
