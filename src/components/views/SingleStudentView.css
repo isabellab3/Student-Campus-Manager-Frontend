@@ -1,4 +1,8 @@
-.top {
+.single-student-page {
+  margin-left: 100px;
+}
+
+.single-student-top {
   display: flex;
 }
 
@@ -6,10 +10,15 @@ img {
   width: 300px;
 }
 
+.single-student-info {
+  margin-left: 70px;
+}
 .single-student-buttons {
   display: flex;
   font-family: blacker-sans;
   color: white;
+  margin-top: 100px;
+  margin-left: 300px;
 }
 
 .single-student-buttons div {
@@ -25,4 +34,24 @@ img {
 
 .single-student-buttons .delete {
   background: #9b9b9b;
+}
+
+.single-student-bottom {
+  display: flex;
+  margin-top: 50px;
+  /* border: red; */
+  /* border-style: solid; */
+}
+
+.enrolled .bottom {
+  display: flex;
+}
+
+.enrolled .bottom .campus-card {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.enrolled .bottom .select-container {
+  margin-left: 50px;
 }

@@ -5,8 +5,8 @@ import { CampusCard } from "..";
 
 const SingleStudentView = props => {
   return (
-    <div>
-      <div className="top">
+    <div className="single-student-page">
+      <div className="single-student-top">
         <img src={props.studentInfo.image} alt="" />
 
         <div className="single-student-info">
@@ -30,13 +30,30 @@ const SingleStudentView = props => {
         </div>
       </div>
 
-      <div className="single-student-campus">
+      <div className="single-student-bottom">
         {props.campus == null ? (
-          <div>This student is not registered to a campus.</div>
+          <div className="unenrolled">
+            This student is not registered to a campus.
+          </div>
         ) : (
-          <div>
-            <div>This student is registered to a campus.</div>
-            <CampusCard campus={props.campus} buttonFunction="unenroll" />
+          <div className="enrolled">
+            <div className="top">
+              <div>This student is registered to a campus.</div>
+            </div>
+
+            <div className="bottom">
+              <CampusCard campus={props.campus} buttonFunction="unenroll" />
+              <div className="select-container">
+                <div className="select-wrapper">
+                  <select className="classic">
+                    <option>None</option>
+                    <option>Campus 1</option>
+                    <option>Campus 2</option>
+                  </select>
+                  <div className="enroll-button">Change Campus</div>
+                </div>
+              </div>
+            </div>
           </div>
         )}
       </div>
