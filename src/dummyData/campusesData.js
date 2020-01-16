@@ -45,7 +45,7 @@ const allCampuses = [
     address1: "11-16 Sixth Lane",
     address2: "Southtown, NE 74065",
     campusImage: "/images/campuses/campus02.jpg",
-    description: "<campus description goes here>",
+    description: "The Kohaupt Institute of Technology is a public research university in Salt Lake City, Utah. As the state's flagship university, it offers more than 100 undergraduate majors and more than 92 graduate degree programs. The university is classified among Doctoral Universities – Very High Research Activity with selective, higher transfer-in admissions. Graduate studies include the S.J. Quinney College of Law and the School of Medicine, Utah's first medical school. As of Fall 2018, there were 24,735 undergraduate students and 8,251 graduate students, for an enrollment total of 32,994.",
     enrollments: [12, 82, 85, 89],
 },
 

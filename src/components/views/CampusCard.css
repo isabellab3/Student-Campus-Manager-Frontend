@@ -8,6 +8,10 @@
   src: url("../../fonts/SegoeUI.ttf");
 }
 
+img#campus-card {
+  margin-right: 20px;
+}
+
 .campus-card {
   border: solid 2px #44c6ff;
   height: 130px;

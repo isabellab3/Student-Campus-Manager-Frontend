@@ -9,33 +9,55 @@ const SingleCampusView = props => {
       <img
         src={props.campus.campusImage}
         alt="campus image"
+        height="400px"
         id="campus"
-        width="600px"
       />
       <div className="campus-right">
         <h1 id="campus-name">{props.campus.campusName}</h1>
-        <p>{props.campus.description}</p>
+        <div className="campus-description">
+          {" "}
+          <p>{props.campus.description}</p>{" "}
+        </div>
       </div>
-      <h5>{props.campus.address1}</h5>
-      <h5>{props.campus.address2}</h5>
-      {props.studentsList.length > 0 ? (
-        props.studentsList.map(student => {
-          return (
-            <StudentCard
-              image={student.image}
-              firstName={student.firstName}
-              lastName={student.lastName}
-              campus={student.campus}
-              onClick={props.onClick}
-              buttonText={"Remove Student"}
-            />
-          );
-        })
-      ) : (
-        <h3>There are no students currently registered to this campus.</h3>
-      )
-      /* dropdown + button component */
-      }
+      <div className="address-bar">
+        <p className="address">{props.campus.address1}</p>
+        <p className="address">{props.campus.address2}</p>
+      </div>
+      <div className="students">
+        <h1 className="title">Students on campus</h1>
+        {props.studentsList.length > 0 ? (
+          // If there are sudents enrolled to this campus...
+          props.studentsList.map(student => {
+            return (
+              <StudentCard
+                image={student.image}
+                firstName={student.firstName}
+                lastName={student.lastName}
+                campus={student.campus}
+                onClick={props.onClick}
+                buttonText={"Remove Student"}
+              />
+            );
+          })
+        ) : (
+          // Else if no students enrolled to this campus...
+          <div className="choose-students">
+            <div className="no-students">
+              There are no students currently registered to this campus.
+            </div>
+            <div className="select-container">
+              <div className="select-wrapper">
+                <select className="classic">
+                  <option>None</option>
+                  <option>Student Temp 1</option>
+                  <option>Student Temp 2</option>
+                </select>
+                <div className="enroll-button">Enroll Student</div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
