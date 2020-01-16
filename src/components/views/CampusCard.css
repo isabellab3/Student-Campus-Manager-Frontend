@@ -1,11 +1,11 @@
 @font-face {
   font-family: blacker-sans;
-  src: url('../../fonts/blacker-sans-trial.extrabold.ttf');
+  src: url("../../fonts/blacker-sans-trial.extrabold.ttf");
 }
 
 @font-face {
   font-family: segoe-ui;
-  src: url('../../fonts/SegoeUI.ttf');
+  src: url("../../fonts/SegoeUI.ttf");
 }
 
 .campus-card {

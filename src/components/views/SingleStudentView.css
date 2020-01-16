@@ -1,0 +1,28 @@
+.top {
+  display: flex;
+}
+
+img {
+  width: 300px;
+}
+
+.single-student-buttons {
+  display: flex;
+  font-family: blacker-sans;
+  color: white;
+}
+
+.single-student-buttons div {
+  padding: 12px 55px 12px 55px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+}
+
+.single-student-buttons .edit {
+  background: #01f5bb;
+}
+
+.single-student-buttons .delete {
+  background: #9b9b9b;
+}
