@@ -20,12 +20,7 @@ export const addStudent = newStudent => {
     payload: newStudent
   };
 };
-// export const displayStudent = student => {
-//   return {
-//     type: DISPLAY_STUDENT,
-//     payload: student
-//   };
-// };
+
 export const removeStudent = id => {
   // add campus id somewhere
   return {
@@ -51,26 +46,31 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case ADD_STUDENT:
       return Object.assign({}, state, {
-        allStudents: [...allStudents, action.payload]
+        allStudents: [...state.allStudents, action.payload]
       });
-    // case DISPLAY_STUDENT:
-    //   return Object.assign({}, state, {
-    //     firstName: action.payload.firstName,
-    //     lastName: action.payload.lastName,
-    //     image: action.payload.image,
-    //     campus: action.payload.image
-    //   });
     case REMOVE_STUDENT:
       // create a copy of the current state
       // place a blank at the index state.id
 
       return Object.assign({}, state, {
-        allStudents: [...allStudents][state.id]
+        allStudents: [...state.allStudents][state.id]
       });
+    /*
+      This works by replacing the old student with the updated student at the same spot.
+      The action payload is the "new" student object coming in, which is basically the student
+      we want to replace but with the newly edited info.
+      We then slice the array of allStudents, forming a "pre" array of all students up to, but
+      not including the old student we want to replace. 
+      Then, we concatenate/add the new student where the old student was.
+      Then, we concatenate the "post" array of all students after, but not including, the old 
+      student we want to replace. 
+      Thus, this reducer case updated the allStudent array with the edited student in place of 
+      the old.
+    */
     case EDIT_STUDENT:
       console.log(action);
       return Object.assign({}, state, {
-        allStudents: allStudents
+        allStudents: state.allStudents
           .slice(0, action.payload.id)
           .concat(action.payload)
           .concat(allStudents.slice(action.payload.id + 1))

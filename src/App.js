@@ -73,6 +73,8 @@ class App extends Component {
             </Switch>
           </div>
 
+          
+
           <div className="footer">
             <b>
               Made in the January 2020 CUNY 2X/TTP Bootcamp | Made by Darren
@@ -80,7 +82,11 @@ class App extends Component {
             </b>
           </div>
         </div>
+
+
       </Router>
+
+
     );
   }
 }
