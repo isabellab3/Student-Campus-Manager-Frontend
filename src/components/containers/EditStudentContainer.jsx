@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { editStudent } from "../../store/utilities/Students";
+import { editStudent } from "../../store/utilities/Student";
 import { EditStudentView } from "../";
 
 class EditStudentContainer extends Component {
@@ -81,7 +81,7 @@ class EditStudentContainer extends Component {
 
 const mapState = (state, ownProps) => {
   return {
-    campusesList: state.campusesReducer.allCampuses,
+    campusesList: state.campusReducer.allCampuses,
     studentInfo: state.studentReducer.allStudents[ownProps.match.params.id]
   };
 };

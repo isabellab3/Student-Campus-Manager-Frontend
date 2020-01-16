@@ -8,7 +8,7 @@ import allStudents from "../../dummyData/studentsData";
 */
 // ACTION TYPES
 const ADD_STUDENT = "ADD_STUDENT";
-const DISPLAY_STUDENT = "DISPLAY_STUDENT";
+// const DISPLAY_STUDENT = "DISPLAY_STUDENT";
 const EDIT_STUDENT = "EDIT_STUDENT";
 const REMOVE_STUDENT = "REMOVE_STUDENT";
 
@@ -20,12 +20,12 @@ export const addStudent = newStudent => {
     payload: newStudent
   };
 };
-export const displayStudent = student => {
-  return {
-    type: DISPLAY_STUDENT,
-    payload: student
-  };
-};
+// export const displayStudent = student => {
+//   return {
+//     type: DISPLAY_STUDENT,
+//     payload: student
+//   };
+// };
 export const removeStudent = id => {
   // add campus id somewhere
   return {
@@ -53,13 +53,13 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         allStudents: [...allStudents, action.payload]
       });
-    case DISPLAY_STUDENT:
-      return Object.assign({}, state, {
-        firstName: action.payload.firstName,
-        lastName: action.payload.lastName,
-        image: action.payload.image,
-        campus: action.payload.image
-      });
+    // case DISPLAY_STUDENT:
+    //   return Object.assign({}, state, {
+    //     firstName: action.payload.firstName,
+    //     lastName: action.payload.lastName,
+    //     image: action.payload.image,
+    //     campus: action.payload.image
+    //   });
     case REMOVE_STUDENT:
       // create a copy of the current state
       // place a blank at the index state.id
