@@ -65,15 +65,12 @@ class App extends Component {
               <Route exact path="/addcampus" component={AddCampusContainer} />
               <Route
                 exact
-                path="/singlestudent"
+                path="/student/:id"
                 component={SingleStudentContainer}
               />
-              <Route exact path="/campus/:id" component={SingleCampus} />
               <Route component={NotFound} />
             </Switch>
           </div>
-
-          
 
           <div className="footer">
             <b>
@@ -82,11 +79,7 @@ class App extends Component {
             </b>
           </div>
         </div>
-
-
       </Router>
-
-
     );
   }
 }

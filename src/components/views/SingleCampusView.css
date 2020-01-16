@@ -1,145 +1,142 @@
 @font-face {
-    font-family: blacker-sans;
-    src: url('../../fonts/blacker-sans-trial.extrabold.ttf');
-  }
+  font-family: blacker-sans;
+  src: url("../../fonts/blacker-sans-trial.extrabold.ttf");
+}
 
 @font-face {
-    font-family: segoe-ui;
-    src: url('../../fonts/SegoeUI.ttf');
+  font-family: segoe-ui;
+  src: url("../../fonts/SegoeUI.ttf");
 }
 
 /* Image of campus */
 img#campus {
-    display: inline-block;
-    margin-right: 20px;
-    justify-content: space-between;
+  display: inline-block;
+  margin-right: 20px;
+  justify-content: space-between;
 }
 
 h1.title {
-    font-family: blacker-sans;
-    color: #434343;
-    display: inline-text;
-    margin-right: 30px;
-    margin-top: 60px;
+  font-family: blacker-sans;
+  color: #434343;
+  display: inline-text;
+  margin-right: 30px;
+  margin-top: 60px;
 }
 
-
 .campus-description {
-    height: 300px;
-    max-width: 700px;
-    word-wrap: break-word;
-    font-family: segoe-ui;
-    color: #434343;
-    font-size: 18px;
+  height: 300px;
+  max-width: 700px;
+  word-wrap: break-word;
+  font-family: segoe-ui;
+  color: #434343;
+  font-size: 18px;
 }
 
 .campus-right {
-    font-family: segoe-ui;
-    font-size: 20px;
-    display: inline-block;
-    vertical-align: top;
-    word-wrap: break-word;
-    margin-left: 30px;
+  font-family: segoe-ui;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: top;
+  word-wrap: break-word;
+  margin-left: 30px;
 }
 
 /* Title of campus name */
 h1#campus-name {
-    font-family: blacker-sans;
-    color: #434343;
+  font-family: blacker-sans;
+  color: #434343;
 }
 
 /* Address Lines */
 p.address {
-    font-family: segoe-ui;
-    font-size: 14px;
-    color: #434343;
-    line-height: 20%;
-    font-weight: bold;
+  font-family: segoe-ui;
+  font-size: 14px;
+  color: #434343;
+  line-height: 20%;
+  font-weight: bold;
 }
 
 .no-students {
-    font-family: segoe-ui;
-    color: #434343;
-    text-align: center;
-    margin-bottom: 30px;
+  font-family: segoe-ui;
+  color: #434343;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .choose-students {
-    text-align: center;
-    /* display: flex; */
+  text-align: center;
+  /* display: flex; */
 }
 
 .choose-students .p {
-    text-align: center;
+  text-align: center;
 }
 
 /* Necessary to center the select portion */
 .select-container {
-    text-align: center;
-    display: inline-block;
+  text-align: center;
+  display: inline-block;
 }
 
 .select-wrapper {
-    display: flex;
-    text-align: center;
-    width: 500px;
-    height: 50px;
+  display: flex;
+  text-align: center;
+  width: 500px;
+  height: 50px;
 }
 
 select#single-campus-view {
-    /* width: 230px;
+  /* width: 230px;
     height: 50px; */
-    font-family: segoe-ui;
-    color: #434343;
-    background-color: white;
-    text-align: center;
-    display: flex;
-    border-color: #44c6ff;
-    border-width: 2px;
-    border-radius: 15px 5px 5px 15px;
-    line-height: 1.5em;
-    padding:  0.5em 3.5em 0.5em 1em;
-    
-    margin: 0;
-    -webkit-box-appearance: border-box;
-    -moz-box-appearance: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  font-family: segoe-ui;
+  color: #434343;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  border-color: #44c6ff;
+  border-width: 2px;
+  border-radius: 15px 5px 5px 15px;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  margin: 0;
+  -webkit-box-appearance: border-box;
+  -moz-box-appearance: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-select#single-campus-view.classic { 
-    text-align: center;
-    background-image:
-    /* left half of arrow */
-      linear-gradient(45deg, transparent 50%, #434343 50%), 
+select#single-campus-view.classic {
+  text-align: center;
+  background-image:
+    /* left half of arrow */ linear-gradient(
+      45deg,
+      transparent 50%,
+      #434343 50%
+    ),
     /* right half of arrow */
       linear-gradient(135deg, #434343 50%, transparent 50%),
-      linear-gradient(to bottom, #44c6ff, #44c6ff);
-    background-position:
-      calc(100% - 21px) calc(1em + 7px),
-      calc(100% - 11px) calc(1em + 7px),
-      100% 0;
-    background-size:
-      10px 10px,
-      10px 10px,
-      4em 4.4em;
-    background-repeat: no-repeat;
-  }
+    linear-gradient(to bottom, #44c6ff, #44c6ff);
+  background-position: calc(100% - 21px) calc(1em + 7px),
+    calc(100% - 11px) calc(1em + 7px), 100% 0;
+  background-size: 10px 10px, 10px 10px, 4em 4.4em;
+  background-repeat: no-repeat;
+}
 
-  .enroll-button {
-      margin-left: 40px;
-      display: flex;
-      font-family: blacker-sans;
-      background-color: #44c6ff;
-      color: white;
-      padding-top: 16px;
-      padding-left: 40px;
-      padding-right: 40px;
-      border-radius: 10px;
-  }
+.enroll-button {
+  margin-left: 40px;
+  display: flex;
+  font-family: blacker-sans;
+  background-color: #44c6ff;
+  color: white;
+  padding-top: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+}
 
-  .enroll-button:hover {
-      background-color: #01f5bb;
-      cursor: pointer;
-  }
+.enroll-button:hover {
+  background-color: #01f5bb;
+  cursor: pointer;
+}
