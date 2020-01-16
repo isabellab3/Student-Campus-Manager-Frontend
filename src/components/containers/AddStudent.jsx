@@ -32,12 +32,12 @@ class AddStudent extends Component {
 
     const { first, last, gpa, url, email, campus } = this.state;
     console.log(first.trim);
-    if(first.trim() == "") {
+    if (first.trim() == "") {
       formIsValid = false;
       errors["first"] = "First name input cannot be empty.";
       firstTemp = "error-border";
     }
-    if(last.trim() == "") {
+    if (last.trim() == "") {
       formIsValid = false;
       errors["last"] = "Last name input cannot be empty.";
       lastTemp = "error-border";
@@ -72,8 +72,8 @@ class AddStudent extends Component {
         email: email
         /*       campus: campus
          */
-      }
-  
+      };
+
       // Add student to campus' list of student
 
 
@@ -84,7 +84,7 @@ class AddStudent extends Component {
 
     else { // If the form doesn't work
     }
-  }
+  };
 
   handleChange = event => {
     this.setState({
@@ -97,7 +97,7 @@ class AddStudent extends Component {
       <AddStudentView
         handleSubmit={this.handleSubmit}
         handleChange={this.handleChange}
-        campusesList={this.props.campusesList}  // comes from redux store
+        campusesList={this.props.campusesList} // comes from redux store
         errors={this.state.errors}
         firstStatus={this.state.firstStatus}
         lastStatus={this.state.lastStatus}
@@ -109,7 +109,7 @@ class AddStudent extends Component {
 
 const mapState = state => {
   return {
-    campusesList: state.campusesReducer.allCampuses
+    campusesList: state.campusReducer.allCampuses
   };
 };
 

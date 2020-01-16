@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addCampus } from "../../store/utilities/Campuses"; // Get the action creator for campuses
+import { addCampus } from "../../store/utilities/Campus"; // Get the action creator for campuses
 import AddCampusView from "../views/AddCampusView";
 
 class AddCampusContainer extends Component {
@@ -29,19 +29,26 @@ class AddCampusContainer extends Component {
     let address1Temp = "";
     let address2Temp = "";
 
-    const { name, address1, address2, url, description, enrollments } = this.state;
+    const {
+      name,
+      address1,
+      address2,
+      url,
+      description,
+      enrollments
+    } = this.state;
     console.log(name.trim);
-    if(name.trim() == "") {
+    if (name.trim() == "") {
       formIsValid = false;
       errors["name"] = "Name input cannot be empty.";
       nameTemp = "error-border";
     }
-    if(address1.trim() == "") {
+    if (address1.trim() == "") {
       formIsValid = false;
       errors["address1"] = "Address line one cannot be empty.";
       address1Temp = "error-border";
     }
-    if(address2.trim()== "") {
+    if (address2.trim() == "") {
       formIsValid = false;
       errors["address2"] = "Address line two cannot be empty.";
       address2Temp = "error-border";
@@ -59,9 +66,17 @@ class AddCampusContainer extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const { name, address1, address2, url, description, enrollments } = this.state // avoid having to write this.state.name, etc. every time in the below code in this function
+    const {
+      name,
+      address1,
+      address2,
+      url,
+      description,
+      enrollments
+    } = this.state; // avoid having to write this.state.name, etc. every time in the below code in this function
 
-    if(this.handleValidation()) { //if the form is valid
+    if (this.handleValidation()) {
+      //if the form is valid
       console.log("handling validation");
       const newCampus = {
         campusName: name,
@@ -70,14 +85,14 @@ class AddCampusContainer extends Component {
         campusImage: url,
         description: description,
         enrollments: enrollments
-      }
-  
+      };
+
       // needs validation
       this.props.addCampus(addCampus) // this new object is what's dispatched
     }
     else { //if the form is not valid
     }
-  }
+  };
 
   handleChange = event => {
     this.setState({
@@ -102,9 +117,9 @@ class AddCampusContainer extends Component {
 // Need list of non-enrolled students....?
 
 const mapDispatch = dispatch => {
-  return {  
+  return {
     addCampus: newCampus => dispatch(addCampus(newCampus))
   };
-}
+};
 
 export default connect(null, mapDispatch)(AddCampusContainer);
