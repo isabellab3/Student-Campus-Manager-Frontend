@@ -20,8 +20,8 @@ function AllStudentsView(props) {
     return (
       <div>
         <div className="top-text">
-          <h1 className="title">All Students</h1>
-          <a href={"/addstudent/"}><div className="add-student-button">+ Add Student</div></a>
+          <h1 className="title-all-students">All Students</h1>
+          <a href={"/addstudent/"}><div className="add-student-button" id="add-student-button">+ Add Student</div></a>
         </div>
         <div className="student-grid-container">{studentElements}</div>
       </div>
