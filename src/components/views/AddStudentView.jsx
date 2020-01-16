@@ -13,6 +13,7 @@ const AddStudentView = props => {
             name="first"
             placeholder="Enter first name here..."
             onChange={props.handleChange}
+            className={props.firstStatus}
             required
           />
         </div>
@@ -23,6 +24,7 @@ const AddStudentView = props => {
             name="last"
             placeholder="Enter last name here..."
             onChange={props.handleChange}
+            className={props.lastStatus}
             required
           />
         </div>
@@ -34,7 +36,10 @@ const AddStudentView = props => {
             placeholder="4.0"
             step="0.01"
             onChange={props.handleChange}
+            className={props.gpaStatus}
             required
+            // min="0"
+            // max="4.0"
           />
         </div>
         <div className="form-row">
@@ -69,6 +74,7 @@ const AddStudentView = props => {
           </select>
         </div>
 
+        {/* Display errors at the bottom of the form above the submit button */}
         {Object.entries(props.errors).map(([k, v]) => {
           return <div className="errors" key={k}><i>{v}</i></div>
         })}
