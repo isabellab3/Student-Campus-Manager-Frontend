@@ -13,28 +13,56 @@ class AddStudent extends Component {
       gpa: 0.0,
       url: "",
       email: "",
-      campus: ""
-    };
+      campus: "",
+      errors: {} // array of custom errors key: value pairs to display depending on which field has the error
+    }
   }
 
-  handleSubmit = event => {
-    event.preventDefault();
+  handleValidation = event => {
+    let formIsValid = true;
+    let errors = {}; //local variable
+
     const { first, last, gpa, url, email, campus } = this.state;
-    const newStudent = {
-      firstName: first,
-      lastName: last,
-      gpa: parseFloat(gpa),
-      image: url,
-      email: email
-      /*       campus: campus
-       */
-    };
+    console.log(first.trim);
+    if(first.trim() == "") {
+      formIsValid = false;
+      errors["first"] = "First name input cannot be empty.";
+    }
+    if(last.trim() == "") {
+      formIsValid = false;
+      errors["last"] = "Last name input cannot be empty.";
+    }
 
-    // Add student to campus' list of student
+    //Set error messages
+    this.setState({errors: errors});
+    return(formIsValid);
+  }
 
-    // needs validation
-    this.props.addStudent(newStudent);
-  };
+  // Need to redirect to that single student's page
+  handleSubmit = event => {
+    event.preventDefault()
+    const { first, last, gpa, url, email, campus } = this.state
+    
+    if(this.handleValidation()) {
+      const newStudent = {
+        firstName: first,
+        lastName: last,
+        gpa: parseFloat(gpa),
+        image: url,
+        email: email
+        /*       campus: campus
+         */
+      }
+  
+      // Add student to campus' list of student
+  
+      // needs validation
+      this.props.addStudent(newStudent)
+    }
+
+    else {
+    }
+  }
 
   handleChange = event => {
     this.setState({
@@ -48,6 +76,7 @@ class AddStudent extends Component {
         handleSubmit={this.handleSubmit}
         handleChange={this.handleChange}
         campusesList={this.props.campusesList}  // comes from redux store
+        errors={this.state.errors}
       />
     );
   }
