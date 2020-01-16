@@ -15,7 +15,7 @@ class AddStudent extends Component {
       email: "",
       campus: "",
       errors: {} // array of custom errors key: value pairs to display depending on which field has the error
-    }
+    };
   }
 
   handleValidation = event => {
@@ -24,26 +24,26 @@ class AddStudent extends Component {
 
     const { first, last, gpa, url, email, campus } = this.state;
     console.log(first.trim);
-    if(first.trim() == "") {
+    if (first.trim() == "") {
       formIsValid = false;
       errors["first"] = "First name input cannot be empty.";
     }
-    if(last.trim() == "") {
+    if (last.trim() == "") {
       formIsValid = false;
       errors["last"] = "Last name input cannot be empty.";
     }
 
     //Set error messages
-    this.setState({errors: errors});
-    return(formIsValid);
-  }
+    this.setState({ errors: errors });
+    return formIsValid;
+  };
 
   // Need to redirect to that single student's page
   handleSubmit = event => {
-    event.preventDefault()
-    const { first, last, gpa, url, email, campus } = this.state
-    
-    if(this.handleValidation()) {
+    event.preventDefault();
+    const { first, last, gpa, url, email, campus } = this.state;
+
+    if (this.handleValidation()) {
       const newStudent = {
         firstName: first,
         lastName: last,
@@ -52,17 +52,15 @@ class AddStudent extends Component {
         email: email
         /*       campus: campus
          */
-      }
-  
-      // Add student to campus' list of student
-  
-      // needs validation
-      this.props.addStudent(newStudent)
-    }
+      };
 
-    else {
+      // Add student to campus' list of student
+
+      // needs validation
+      this.props.addStudent(newStudent);
+    } else {
     }
-  }
+  };
 
   handleChange = event => {
     this.setState({
@@ -75,7 +73,7 @@ class AddStudent extends Component {
       <AddStudentView
         handleSubmit={this.handleSubmit}
         handleChange={this.handleChange}
-        campusesList={this.props.campusesList}  // comes from redux store
+        campusesList={this.props.campusesList} // comes from redux store
         errors={this.state.errors}
       />
     );
@@ -84,7 +82,7 @@ class AddStudent extends Component {
 
 const mapState = state => {
   return {
-    campusesList: state.campusesReducer.allCampuses
+    campusesList: state.campusReducer.allCampuses
   };
 };
 

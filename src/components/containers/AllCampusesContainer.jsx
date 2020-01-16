@@ -20,7 +20,7 @@ class AllCampusesContainer extends Component {
 
 function mapStateToProps(state) {
   console.log(state);
-  return { allCampuses: state.campusesReducer.allCampuses };
+  return { allCampuses: state.campusReducer.allCampuses };
 }
 
 export default connect(mapStateToProps)(AllCampusesContainer);
