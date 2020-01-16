@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { editStudent } from "../../store/utilities/Students";
+import { editStudent } from "../../store/utilities/Student";
 import { EditStudentView } from "../";
 
 class EditStudentContainer extends Component {
@@ -16,21 +16,22 @@ class EditStudentContainer extends Component {
       gpa: this.props.studentInfo.gpa,
       image: this.props.studentInfo.image,
       email: this.props.studentInfo.email,
-      campus: this.props.campusesList[this.props.studentInfo.campus].campusName
+      campus: this.props.studentInfo.campus
     };
     console.log(this.state.first);
   }
 
   handleSubmit = event => {
     event.preventDefault();
-    const { firstName, lastName, gpa, image, email, campus } = this.state;
+    const { firstName, lastName, gpa, image, email, campus, id } = this.state;
     const newStudent = {
       firstName: firstName,
       lastName: lastName,
       gpa: parseFloat(gpa),
       image: image,
       email: email,
-      campus: campus
+      campus: campus,
+      id: this.props.studentInfo.id
     };
 
     // needs validation
@@ -80,7 +81,7 @@ class EditStudentContainer extends Component {
 
 const mapState = (state, ownProps) => {
   return {
-    campusesList: state.campusesReducer.allCampuses,
+    campusesList: state.campusReducer.allCampuses,
     studentInfo: state.studentReducer.allStudents[ownProps.match.params.id]
   };
 };

@@ -3,11 +3,31 @@
   src: url('../../fonts/blacker-sans-trial.extrabold.ttf');
 }
 
+@font-face {
+  font-family: segoe-ui;
+  src: url('../../fonts/SegoeUI.ttf');
+}
+
 .errors {
-  font-family: blacker-sans;
+  font-family: segoe-ui;
   color: red;
   font-size: 14px;
 }
+
+.error-border {
+  border-color: red;
+  border-width: 2px;
+}
+
+/* input:invalid {
+  border-color: red;
+  border-width: 2px;
+} */
+
+/* input[value=""] {
+  border-color: red;
+  border-width: 2px;
+} */
 
 .add-student {
   font-family: blacker-sans;

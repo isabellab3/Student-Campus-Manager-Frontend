@@ -32,8 +32,6 @@ class App extends Component {
               <Link to="/">Home</Link>
               <Link to="/campuses">Campuses</Link>
               <Link to="/allstudents">Students</Link>
-              <Link to="/addcampus">Add Campus</Link>
-              <Link to="/addstudent">Add Student</Link>
             </div>
           </div>
 
@@ -75,6 +73,8 @@ class App extends Component {
             </Switch>
           </div>
 
+          
+
           <div className="footer">
             <b>
               Made in the January 2020 CUNY 2X/TTP Bootcamp | Made by Darren
@@ -82,7 +82,11 @@ class App extends Component {
             </b>
           </div>
         </div>
+
+
       </Router>
+
+
     );
   }
 }

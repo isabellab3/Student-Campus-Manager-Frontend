@@ -42,7 +42,7 @@ const EditStudentView = props => {
         <div className="form-row">
           <label>Student Image URL</label>
           <input
-            type="url"
+            type="text"
             name="image"
             placeholder="Enter student image URL..."
             onChange={props.handleChange}
@@ -66,12 +66,10 @@ const EditStudentView = props => {
             name="campus"
             placeholder="Campus"
             onChange={props.handleChange}
-            value={props.campus}
+            value={props.studentInfo.campus}
           >
             {props.campusesList.map(campus => {
-              return (
-                <option value={campus.campusName}>{campus.campusName}</option>
-              );
+              return <option value={campus.id}>{campus.campusName}</option>;
             })}
           </select>
         </div>

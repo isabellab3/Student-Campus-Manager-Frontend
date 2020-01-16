@@ -21,7 +21,7 @@ const allStudents = [
 
 {
     id: 2,
-    firstName: "Elzbieta",
+    firstName: "Harrison",
     lastName: "Suzuki",
     gpa: 4.0,
     image: "/images/students/student04.jpg",
