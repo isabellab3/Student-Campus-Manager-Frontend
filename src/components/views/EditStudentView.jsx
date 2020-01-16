@@ -42,7 +42,7 @@ const EditStudentView = props => {
         <div className="form-row">
           <label>Student Image URL</label>
           <input
-            type="url"
+            type="text"
             name="image"
             placeholder="Enter student image URL..."
             onChange={props.handleChange}

@@ -23,14 +23,15 @@ class EditStudentContainer extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const { firstName, lastName, gpa, image, email, campus } = this.state;
+    const { firstName, lastName, gpa, image, email, campus, id } = this.state;
     const newStudent = {
       firstName: firstName,
       lastName: lastName,
       gpa: parseFloat(gpa),
       image: image,
       email: email,
-      campus: campus
+      campus: campus,
+      id: this.props.studentInfo.id
     };
 
     // needs validation

@@ -68,11 +68,12 @@ export default (state = initialState, action) => {
         allStudents: [...allStudents][state.id]
       });
     case EDIT_STUDENT:
+      console.log(action);
       return Object.assign({}, state, {
         allStudents: allStudents
           .slice(0, action.payload.id)
-          .concat([action.payload])
-          .concat(allStudents.slice(action.payload.id + 1, allStudents.length))
+          .concat(action.payload)
+          .concat(allStudents.slice(action.payload.id + 1))
       });
     default:
       return state;
