@@ -1,12 +1,27 @@
-.single-student-page {
+/* .single-student-page {
   margin-left: 100px;
+} */
+
+h2.single-student-name {
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+.single-student-info a {
+  color: #434343;
+  text-decoration: underline;
 }
 
 .single-student-top {
   display: flex;
+  margin-left: 100px;
 }
 
-img {
+.single-student-bottom-enrolled {
+  margin-left: 100px;
+}
+
+img .single-student-image {
   width: 300px;
 }
 
@@ -18,7 +33,7 @@ img {
   font-family: blacker-sans;
   color: white;
   margin-top: 100px;
-  margin-left: 300px;
+  margin-left: 230px;
 }
 
 .single-student-buttons div {
@@ -36,15 +51,37 @@ img {
   background: #9b9b9b;
 }
 
-.single-student-bottom {
+.single-student-bottom-enrolled {
   display: flex;
   margin-top: 50px;
   /* border: red; */
   /* border-style: solid; */
 }
 
-.enrolled .bottom {
+.single-student-bottom-unenrolled {
+  text-align: center;
+  margin-top: 50px;
+  /* border: red; */
+  /* border-style: solid; */
+}
+
+.single-student-bottom-unenrolled .unenrolled {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-style: solid; */
+}
+
+.unenrolled .bottom .select-container {
+  margin-left: auto;
+  margin-right: auto;
+  /* border-style: solid; */
+}
+
+.enrolled .bottom,
+.unenrolled .bottom {
   display: flex;
+  margin-top: 30px;
 }
 
 .enrolled .bottom .campus-card {

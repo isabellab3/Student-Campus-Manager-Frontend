@@ -7,10 +7,14 @@ const SingleStudentView = props => {
   return (
     <div className="single-student-page">
       <div className="single-student-top">
-        <img src={props.studentInfo.image} alt="" />
+        <img
+          className="single-student-image"
+          src={props.studentInfo.image}
+          alt=""
+        />
 
         <div className="single-student-info">
-          <h2>
+          <h2 className="single-student-name">
             {props.studentInfo.firstName + " " + props.studentInfo.lastName}
           </h2>
           <p>
@@ -30,12 +34,28 @@ const SingleStudentView = props => {
         </div>
       </div>
 
-      <div className="single-student-bottom">
-        {props.campus == null ? (
+      {props.campus == null ? (
+        <div className="single-student-bottom-unenrolled">
           <div className="unenrolled">
-            This student is not registered to a campus.
+            <div className="top">
+              This student is not registered to a campus.
+            </div>
+            <div className="bottom">
+              <div className="select-container">
+                <div className="select-wrapper">
+                  <select className="classic">
+                    <option>None</option>
+                    <option>Campus 1</option>
+                    <option>Campus 2</option>
+                  </select>
+                  <div className="enroll-button">Change Campus</div>
+                </div>
+              </div>
+            </div>
           </div>
-        ) : (
+        </div>
+      ) : (
+        <div className="single-student-bottom-enrolled">
           <div className="enrolled">
             <div className="top">
               <div>This student is registered to a campus.</div>
@@ -55,8 +75,8 @@ const SingleStudentView = props => {
               </div>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
