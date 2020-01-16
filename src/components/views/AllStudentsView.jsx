@@ -4,7 +4,16 @@ import { StudentCard } from "..";
 
 function AllStudentsView(props) {
     let studentElements = [];
+    let campusNameToBePassed = "";
+
+    // The campuses are passed down as props from the Store so you can access it using the student's campus id
     for (let i = 0; i < props.allStudents.length; i++) {
+      if(props.allStudents[i].campus != null && props.allStudents[i].campus != undefined) {
+        console.log("campus name", props.allCampuses[props.allStudents[i].campus].campusName);
+        campusNameToBePassed = props.allCampuses[props.allStudents[i].campus].campusName;
+      } else {
+        campusNameToBePassed = "Not enrolled";
+      }
       
       studentElements.push(
         <div className="student-grid-item">
@@ -12,6 +21,7 @@ function AllStudentsView(props) {
             student={props.allStudents[i]}
             buttonFunction={props.buttonFunction}
             buttonText={props.buttonText}
+            campusName={campusNameToBePassed}
           />
         </div>
       );
