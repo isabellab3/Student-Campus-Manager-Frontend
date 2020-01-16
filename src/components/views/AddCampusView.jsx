@@ -3,7 +3,6 @@ import "./AddStudentView.css";
 
 // If you need cards or styling, you can uncomment the lines here to import
 // import "../views/AddCampusView.css";
-// import { CampusCard } from "../";
 // import { StudentCard } from "../";
 
 const AddCampusView = props => {
@@ -18,6 +17,7 @@ const AddCampusView = props => {
             name='name'
             placeholder='Enter campus name here...'
             onChange={props.handleChange}
+            className={props.nameStatus}
             required
           />
         </div>
@@ -28,6 +28,7 @@ const AddCampusView = props => {
             name='address1'
             placeholder='Enter address line 1 here...'
             onChange={props.handleChange}
+            className={props.address1Status}
             required
           />
         </div>
@@ -38,6 +39,7 @@ const AddCampusView = props => {
             name='address2'
             placeholder='Enter address line 2 here...'
             onChange={props.handleChange}
+            className={props.address2Status}
             required
           />
         </div>
