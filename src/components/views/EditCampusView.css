@@ -1,0 +1,10 @@
+.errors {
+    font-family: segoe-ui;
+    color: red;
+    font-size: 14px;
+  }
+  
+.error-border {
+    border-color: red;
+    border-width: 2px;
+}

@@ -74,7 +74,7 @@ export default (state = initialState, action) => {
           .slice(0, action.payload.id)
           .concat(action.payload)
           .concat(allStudents.slice(action.payload.id + 1))
-      });
+    });
     default:
       return state;
   }

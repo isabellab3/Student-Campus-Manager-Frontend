@@ -47,7 +47,7 @@ class App extends Component {
                 path="/campus/:id"
                 component={SingleCampusContainer}
               />
-              {/* <Route exact path="/editcampus/:id" component={EditCampus} /> */}
+              <Route exact path="/editcampus/:id" component={EditCampusContainer} />
               <Route
                 exact
                 path="/editstudent/:id"

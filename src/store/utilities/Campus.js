@@ -10,7 +10,7 @@ import allCampuses from "../../dummyData/campusesData";
 // ACTION TYPES
 const GET_CAMPUS = "GET_CAMPUS";
 const ADD_CAMPUS = "ADD_CAMPUS";
-// const EDIT_CAMPUS = "EDIT_CAMPUS";
+const EDIT_CAMPUS = "EDIT_CAMPUS";
 const REMOVE_CAMPUS = "REMOVE_CAMPUS";
 
 // ACTION CREATORS
@@ -41,6 +41,12 @@ export const removeCampus = id => {
     payload: id
   };
 };
+export const editCampus = newCampus => {
+  return {
+    type: EDIT_CAMPUS,
+    payload: newCampus
+  };
+};
 
 const initialState = {
   allCampuses: allCampuses
@@ -61,6 +67,14 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         allCampuses: [...allCampuses][state.id]
       });
+    case EDIT_CAMPUS:
+      console.log(action);
+      return Object.assign({}, state, {
+        allCampuses: state.allCampuses
+          .slice(0, action.payload.id)
+          .concat(action.payload)
+          .concat(allCampuses.slice(action.payload.id + 1))
+    });
     default:
       return state;
   }

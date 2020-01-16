@@ -7,7 +7,6 @@ class AllStudentsContainer extends Component {
   render() {
     return (
       <div>
-        
         <AllStudentsView 
           allStudents={this.props.allStudents}
           allCampuses={this.props.allCampuses}

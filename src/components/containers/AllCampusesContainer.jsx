@@ -5,7 +5,7 @@ import { AllCampusesView } from "..";
 
 class AllCampusesContainer extends Component {
   render() {
-    console.log(this.props.allCampuses);
+    // console.log(this.props.allCampuses);
 
     return (
       <div>
