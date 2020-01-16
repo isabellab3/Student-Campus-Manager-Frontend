@@ -15,7 +15,7 @@ class AllStudentsContainer extends Component {
       </div>
     );
   }
-}
+} 
 
 function mapStateToProps(state) {
   return { allStudents: state.studentReducer.allStudents };

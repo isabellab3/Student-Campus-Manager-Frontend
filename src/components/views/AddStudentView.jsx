@@ -2,7 +2,6 @@ import React from "react";
 import "./AddStudentView.css";
 
 const AddStudentView = props => {
-  console.log("props.campusList", props.campusesList)
   return (
     <div className="add-student">
       <h1>New Student</h1>

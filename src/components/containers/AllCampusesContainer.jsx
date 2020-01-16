@@ -13,7 +13,7 @@ class AllCampusesContainer extends Component {
           allCampuses={this.props.allCampuses}
           buttonFunction="remove"
         />
-      </div>
+      </div> 
     );
   }
 }

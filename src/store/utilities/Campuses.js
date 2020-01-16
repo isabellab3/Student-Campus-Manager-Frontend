@@ -38,11 +38,11 @@ export default (state = initialState, action) => {
     case ADD_CAMPUS:
       let newCampus =  action.payload
       return Object.assign({}, state, {
-        allCampuses: [...allCampuses, newCampus]
+        allCampuses: {...allCampuses, newCampus}
       });
     case REMOVE_CAMPUS:
       // create a copy of the current state
-      // place a blank at the index state.id
+      // place a blank at the index state .id
       return Object.assign({}, state, {
         allCampuses: [...allCampuses][state.id]
       });
