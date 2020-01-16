@@ -41,22 +41,18 @@ const SingleCampusView = props => {
           })
         ) : (
           // Else if no students enrolled to this campus...
-          ( <div className="choose-students">
-              
-              <div className="no-students">
-                There are no students currently registered to this campus.
-              </div>
-              <div className="select-container">
-                <div className="select-wrapper">
-                  <select className="classic" id="single-campus-view">
-                    
-                    <option>None</option>
-                    <option>Student Temp 1</option>
-                    <option>Student Temp 2</option>
-                  </select>
-                  <div className="enroll-button">
-                    Enroll Student
-                  </div>
+          <div className="choose-students">
+            <div className="no-students">
+              There are no students currently registered to this campus.
+            </div>
+            <div className="select-container">
+              <div className="select-wrapper">
+                <select className="classic" id="single-campus-view">
+                  <option>None</option>
+                  <option>Student Temp 1</option>
+                  <option>Student Temp 2</option>
+                </select>
+                <div className="enroll-button">Enroll Student</div>
               </div>
             </div>
           </div>
