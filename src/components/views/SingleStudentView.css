@@ -1,10 +1,18 @@
-/* .single-student-page {
-  margin-left: 100px;
-} */
+@font-face {
+  font-family: blacker-sans;
+  src: url('../../fonts/blacker-sans-trial.extrabold.ttf');
+}
+
+@font-face {
+  font-family: segoe-ui;
+  src: url('../../fonts/SegoeUI.ttf');
+}
 
 h2.single-student-name {
   font-size: 40px;
   margin-top: 0px;
+  font-family: blacker-sans;
+  color: #434343;
 }
 
 .single-student-info a {
