@@ -2,10 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # About the App
 
-__Developers:__ Darren Zhang, Eva Yan, Isabella Berekdar, Samson Wu 
-__Timeframe:__ 5-7 days
-__Date:__ January 2020
-__Program:__ CUNY 2X/TTP Winter 2020 Cohort
+__Developers:__ Darren Zhang, Eva Yan, Isabella Berekdar, Samson Wu <br />
+__Timeframe:__ 5-7 days <br /> 
+__Date:__ January 2020 <br /> 
+__Program:__ CUNY 2X/TTP Winter 2020 Cohort <br /> 
 
 This web application allows the user to add, edit, and delete students and campuses. 
 
