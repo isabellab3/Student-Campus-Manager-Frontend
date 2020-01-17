@@ -1,4 +1,5 @@
 import allStudents from "../../dummyData/studentsData";
+import axios from 'axios';
 
 /*
   The purpose of this file is to: 
@@ -8,7 +9,7 @@ import allStudents from "../../dummyData/studentsData";
 */
 // ACTION TYPES
 const ADD_STUDENT = "ADD_STUDENT";
-// const DISPLAY_STUDENT = "DISPLAY_STUDENT";
+const GET_STUDENT = "GET_STUDENT";
 const EDIT_STUDENT = "EDIT_STUDENT";
 const REMOVE_STUDENT = "REMOVE_STUDENT";
 
@@ -20,6 +21,8 @@ export const addStudent = newStudent => {
     payload: newStudent
   };
 };
+
+
 
 export const removeStudent = id => {
   // add campus id somewhere
@@ -36,6 +39,26 @@ export const editStudent = newStudent => {
   };
 };
 
+export const getStudent = student => {
+  // add campus id somewhere
+  return {
+    type: GET_STUDENT,
+    payload: student
+  };
+};
+
+// Return a campus object from the database, given its id
+export const getStudentThunk = studentId => dispatch => {
+  return axios
+    // get campus with id campusId
+    .get(`/api/students/${studentId}`)
+    .then(res => res.data)
+    .then(student =>  dispatch(getStudent(student)))
+    .catch(err => console.log(err));
+}
+
+
+
 // ???
 const initialState = {
   allStudents: allStudents
@@ -48,6 +71,9 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         allStudents: [...state.allStudents, action.payload]
       });
+
+    case GET_STUDENT:
+      return action.payload
     case REMOVE_STUDENT:
       // create a copy of the current state
       // place a blank at the index state.id
