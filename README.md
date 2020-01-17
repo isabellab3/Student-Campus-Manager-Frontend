@@ -1,5 +1,35 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# About the App
+
+__Developers:__ Darren Zhang, Eva Yan, Isabella Berekdar, Samson Wu 
+__Timeframe:__ 5-7 days
+__Date:__ January 2020
+__Program:__ CUNY 2X/TTP Winter 2020 Cohort
+
+This web application allows the user to add, edit, and delete students and campuses. 
+
+Below are some wireframes made pre-development that present the layout and concept of the app that we followed while developing the application.
+
+## Homepage
+![Homepage](https://i.imgur.com/1cfVAut.png)
+
+## All Students and Campuses 
+![AllCampuses](https://i.imgur.com/CRbgMEv.png)
+![AllStudents](https://i.imgur.com/FOshOnG.png)
+
+## Single Student and Campus
+![SingleStudent](https://i.imgur.com/Y8V0SUi.png)
+![SingleCampus](https://i.imgur.com/WE20YJU.png)
+
+## Forms
+![AddCampus](https://i.imgur.com/PN64gzl.png)
+![AddStudent](https://i.imgur.com/gjslxlZ.png)
+![EditCampus](https://i.imgur.com/NxmHGGR.png)
+![EditStudentError](https://i.imgur.com/k8ZvlL1.png)
+
+# Scripts and Running the App
+
 ## Available Scripts
 
 In the project directory, you can run:
