@@ -14,7 +14,7 @@
   grid-template-columns: 16.667% 16.667% 16.667% 16.667% 16.667% 16.667%;
 }
 
-h1.title {
+h1.title-all-students {
   font-family: blacker-sans;
   color: #44c6ff;
   display: inline-text;
@@ -48,6 +48,6 @@ h1.title {
   margin-bottom: 20px;
 }
 
-a {
+a#add-student-button {
   text-decoration: none;
 }

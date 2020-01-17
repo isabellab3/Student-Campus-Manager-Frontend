@@ -3,7 +3,6 @@ import { connect } from "react-redux"
 import SingleCampusView from "../views/SingleCampusView"
 import allStudents from "../../dummyData/studentsData"
 import allCampuses from "../../dummyData/campusesData"
-
 import { getCampus } from "../../store/utilities/Campus"
 
 class SingleCampusContainer extends Component {
@@ -20,9 +19,8 @@ class SingleCampusContainer extends Component {
     // get campus from id in url
     // (with redux) fetch the campus info of the campus corresponding to the id from the url
     // const campus = this.props.getCampus(id)
-
-    // for now just gets warwick university
-    const campus = allCampuses[0]
+    
+    const campus = allCampuses[id]
 
     // get list of students who attend this school from the id
     // (with redux) function to query database and get any students who attend this campus

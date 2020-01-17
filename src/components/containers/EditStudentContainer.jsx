@@ -18,7 +18,7 @@ class EditStudentContainer extends Component {
       email: this.props.studentInfo.email,
       campus: this.props.studentInfo.campus
     };
-    console.log(this.state.first);
+    // console.log(this.state.first);
   }
 
   handleSubmit = event => {

@@ -3,6 +3,11 @@
   src: url('../../fonts/blacker-sans-trial.extrabold.ttf');
 }
 
+@font-face {
+  font-family: segoe-ui;
+  src: url('../../fonts/SegoeUI.ttf');
+}
+
 .student-card {
   border: solid 2px #44c6ff;
   width: 180px;
@@ -22,6 +27,7 @@
 .student-card h3 {
   color: #434343;
   text-align: center;
+  font-family: segoe-ui;
 }
 
 .student-card h4 {
@@ -31,9 +37,11 @@
 }
 
 .student-card button {
-  border-radius: 50%;
+  border-radius: 10px;
   background-color: #434343;
-  width: 30px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   height: 30px;
   font-family: blacker-sans;
   padding-top: 4px;
