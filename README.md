@@ -7,9 +7,9 @@ __Timeframe:__ 5-7 days <br />
 __Date:__ January 2020 <br /> 
 __Program:__ CUNY 2X/TTP Winter 2020 Cohort <br /> 
 
-This web application allows the user to add, edit, and delete students and campuses. 
+This web application uses Node, Express, React, Redux, PostgreSQL, and Sequelize, to build a RESTful full-stack web application to manage students and campuses. This will cover all of the CRUD operations such as Creation, Reading, Updating, and Deletion. This will encompass models, querying a database with an ORM, designing routes/endpoints and handler functions to process user requests and generate responses, writing out React Components, managing the state of the application with React-Redux, and much more. This will also involve having two individual repositories/applications (a separate server and a separate client), which encourages separation of concerns and modularity. 
 
-Below are some wireframes made pre-development that present the layout and concept of the app that we followed while developing the application.
+Below are some __UI wireframes__ made pre-development that present the layout and concept of the app that we followed while developing the application.
 
 ## Homepage
 ![Homepage](https://i.imgur.com/1cfVAut.png)
