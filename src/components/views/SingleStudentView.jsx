@@ -65,7 +65,7 @@ const SingleStudentView = props => {
               <CampusCard campus={props.campus} buttonFunction="unenroll" />
               <div className="select-container">
                 <div className="select-wrapper">
-                  <select className="classic">
+                  <select className="classic" id="single-student-view">
                     <option>None</option>
                     <option>Campus 1</option>
                     <option>Campus 2</option>
