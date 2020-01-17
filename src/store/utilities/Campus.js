@@ -1,4 +1,5 @@
 import allCampuses from "../../dummyData/campusesData";
+import axios from 'axios';
 
 /*
   The purpose of this file is to: 
@@ -14,19 +15,30 @@ const ADD_CAMPUS = "ADD_CAMPUS";
 const REMOVE_CAMPUS = "REMOVE_CAMPUS";
 
 // ACTION CREATORS
-export const getCampus = campusID => {
+export const getCampus = campus => {
   // When backend is made:
   // make axios request
   // get the campus w/ id campusID
   // return campus object
   // for now: return campus 0
-  const campus = allCampuses[0]; ///////
-
+  //const campus = allCampuses[0]; ///////
   return {
     type: GET_CAMPUS,
     payload: campus
   };
 };
+
+
+// Return a campus object from the database, given its id
+export const getCampusThunk = campusId => dispatch => {
+  return axios
+    // get campus with id campusId
+    .get(`/api/campuses/${campusId}`)
+    .then(res => res.data)
+    .then(campus =>  dispatch(getCampus(campus)))
+    .catch(err => console.log(err));
+}
+
 export const addCampus = newCampus => {
   // add campus id somewhere
   return {
@@ -34,6 +46,7 @@ export const addCampus = newCampus => {
     payload: newCampus
   };
 };
+
 export const removeCampus = id => {
   // add campus id somewhere
   return {

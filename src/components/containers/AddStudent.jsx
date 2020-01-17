@@ -93,6 +93,7 @@ class AddStudent extends Component {
   };
 
   render() {
+
     return (
       <AddStudentView
         handleSubmit={this.handleSubmit}
