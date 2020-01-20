@@ -6,6 +6,7 @@ __Developers:__ Darren Zhang, Eva Yan, Isabella Berekdar, Samson Wu <br />
 __Timeframe:__ 5-7 days <br /> 
 __Date:__ January 2020 <br /> 
 __Program:__ CUNY 2X/TTP Winter 2020 Cohort <br /> 
+__Link to Back-end Repo:__ https://github.com/isabellaberekdar/Student-Campus-Manager-Backend
 
 This web application uses Node, Express, React, Redux, PostgreSQL, and Sequelize, to build a RESTful full-stack web application to manage students and campuses. This will cover all of the CRUD operations such as Creation, Reading, Updating, and Deletion. This will encompass models, querying a database with an ORM, designing routes/endpoints and handler functions to process user requests and generate responses, writing out React Components, managing the state of the application with React-Redux, and much more. This will also involve having two individual repositories/applications (a separate server and a separate client), which encourages separation of concerns and modularity. 
 
